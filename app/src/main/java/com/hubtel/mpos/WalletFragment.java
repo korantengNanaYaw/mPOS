@@ -3,10 +3,16 @@ package com.hubtel.mpos;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -28,10 +34,35 @@ public class WalletFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+    RecyclerView walletRecycle;
+
+    MenuItemsRecycleViewAdapter menuItemsRecycleViewAdapter;
 
     public WalletFragment() {
         // Required empty public constructor
     }
+
+
+    List<MenuItem> listOfMenuItems(){
+
+        List<MenuItem> listOfMenuItems=new ArrayList<>();
+        MenuItem menuItem=new MenuItem();
+        menuItem.setTitle("Mobile Money");
+        listOfMenuItems.add(menuItem);
+
+        menuItem=new MenuItem();
+        menuItem.setTitle("MPower Wallet");
+        listOfMenuItems.add(menuItem);
+
+
+        menuItem=new MenuItem();
+        menuItem.setTitle("Bank Card");
+        listOfMenuItems.add(menuItem);
+
+
+        return listOfMenuItems;
+    }
+
 
     /**
      * Use this factory method to create a new instance of
@@ -72,6 +103,17 @@ public class WalletFragment extends Fragment {
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
         }
+    }
+
+
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        walletRecycle=(RecyclerView)view.findViewById(R.id.walletRecycle);
+        menuItemsRecycleViewAdapter=new MenuItemsRecycleViewAdapter(Application.getAppContext(),listOfMenuItems());
+        RecyclerView.LayoutManager mlayout=new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL,false);
+        walletRecycle.setAdapter(menuItemsRecycleViewAdapter);
+        walletRecycle.setLayoutManager(mlayout);
     }
 
     @Override

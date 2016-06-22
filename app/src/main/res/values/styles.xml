@@ -22,7 +22,17 @@
 
     </style>
 
-
+    <style name="keypadButton" parent="@android:style/Widget.Button">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#194e9a</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">0.5</item>
+        <item name="android:background">@drawable/login_keypad_button</item>
+        <item name="android:padding">4dip</item>
+    </style>
 
 
 

@@ -64,4 +64,8 @@ dependencies {
     compile 'com.fasterxml.jackson.core:jackson-databind:2.4.4'
     compile 'it.neokree:MaterialTabs:0.11'
     compile 'com.roughike:bottom-bar:1.2.1'
+    compile 'info.hoang8f:fbutton:1.0.5'
+    compile 'com.android.support:recyclerview-v7:23.0.1'
+
+
 }

@@ -68,8 +68,8 @@ public class Typefacer {
         return Typeface.createFromAsset(mgr, "fonts/Roboto-ThinItalic.ttf");
     }
 
-    public Typeface getRoboCondensedLight(AssetManager mgr) {
-        return Typeface.createFromAsset(mgr, "fonts/RobotoCondensed-Light.ttf");
+    public Typeface getRoboCondensedLight() {
+        return Typeface.createFromAsset(Application.getAppContext().getAssets(), "fonts/RobotoCondensed-Light.ttf");
     }
 
     public Typeface getRoboCondensedLghtItalic(AssetManager mgr) {
@@ -80,8 +80,8 @@ public class Typefacer {
         return Typeface.createFromAsset(mgr, "fonts/Roboto-Regular.ttf");
     }
 
-    public Typeface getRoboRealThin(AssetManager mgr) {
-        return Typeface.createFromAsset(mgr, "fonts/Roboto-Thin.ttf");
+    public Typeface getRoboRealThin() {
+        return Typeface.createFromAsset(Application.getAppContext().getAssets(), "fonts/Roboto-Thin.ttf");
     }
 
     public Typeface getRoboCondensedRegular(AssetManager mgr) {

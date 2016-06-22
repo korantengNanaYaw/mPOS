@@ -29,7 +29,8 @@
             android:textColor="@android:color/white"
             android:layout_centerVertical="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+       />
         <TextView
             android:id="@+id/toolbarnotify"
             style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"

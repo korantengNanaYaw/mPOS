@@ -16,6 +16,8 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -30,7 +32,7 @@ import it.neokree.materialtabs.MaterialTabHost;
 import it.neokree.materialtabs.MaterialTabListener;
 
 public class MainActivity extends AppCompatActivity implements MaterialTabListener,
-        POSFRAGMENT.OnFragmentInteractionListener,WalletFragment.OnFragmentInteractionListener {
+        POSFRAGMENT.OnFragmentInteractionListener,WalletFragment.OnFragmentInteractionListener, View.OnClickListener {
     CoordinatorLayout coordinatorLayout;
     Toolbar toolbar;
     TextView toolbarTitle;
@@ -55,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
         setBottomNavigation(savedInstanceState);
         setViewHolder();
         inflateLayout();
+        setTabHost();
 
 
 
@@ -64,12 +67,13 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
     private void setViewHolder() {
 
         nestedscroll=(NestedScrollView)findViewById(R.id.myScrollingContent) ;
-        nestedscroll.removeAllViews();
-       // relativelayout=(RelativeLayout)findViewById(R.id.ViewHolder);
+
+
     }
 
 
-    private void setTabHost(){
+
+    /**private void setTabHost(){
 
         pager = (ViewPager) this.findViewById(R.id.pager);
         setupViewPager(pager);
@@ -86,8 +90,8 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
 
         viewPager.setAdapter(adapter);
     }
+**/
 
- /**
     private void setTabHost() {
 
         tabHost = (MaterialTabHost) this.findViewById(R.id.materialTabHost);
@@ -114,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
 
         }
     }
-**/
+
     private void inflateLayout(){
 
       //  View view;
@@ -125,9 +129,8 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
 
            view=null;
            view = inflater.inflate(R.layout.payment_layout, null);
-
            nestedscroll.addView(view);
-           setTabHost();
+           //setTabHost();
 
        }catch (Exception ex){
 
@@ -149,13 +152,14 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
                     case R.id.payment:
 
                         inflateLayout();
-
+                        setTabHost();
                         // Snackbar.make(coordinatorLayout, "Recent Item Selected", Snackbar.LENGTH_LONG).show();
                         break;
                     case R.id.history:
                         nestedscroll.removeAllViewsInLayout();
                         break;
                     case R.id.setting:
+                        nestedscroll.removeAllViewsInLayout();
                         // Snackbar.make(coordinatorLayout, "Location Item Selected", Snackbar.LENGTH_LONG).show();
                         break;
 
@@ -181,12 +185,18 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
 
 
     }
-
     @Override
     public void onFragmentInteraction(Uri uri) {
 
     }
-    class ViewPagerAdapter extends FragmentPagerAdapter {
+
+    @Override
+    public void onClick(View v) {
+
+    }
+
+    /**
+     * class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
         private final List<String> mFragmentTitleList = new ArrayList<>();
 
@@ -214,9 +224,11 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
             return mFragmentTitleList.get(position);
         }
     }
-   /** private class ViewPagerAdapter extends FragmentStatePagerAdapter {
+
+    **/
+    private class ViewPagerAdapter extends FragmentStatePagerAdapter {
         private String[] titles = {
-                "POS", "Wallet"
+                "KeyPad", "MPOS"
         };
 
         Fragment fragment=null;
@@ -230,7 +242,7 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
 
 
 
-            if(num==0)
+          if(num==0)
             {
 
                 // actionButton.setVisibility(View.GONE);
@@ -239,7 +251,8 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
 
             } if(num==1)
             {
-
+               // Button checkoutBtn = (Button)findViewById(R.id.checkoutbtn);
+            //    checkoutBtn.setVisibility(View.INVISIBLE);
                 // actionButton.setVisibility(View.GONE);
                 fragment=new WalletFragment();
                 // actionButton.setVisibility(View.GONE);
@@ -254,6 +267,8 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
 
         }
 
+
+
         @Override
         public int getCount() {
             return 2;
@@ -266,7 +281,7 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
 
     }
 
-    **/
+
     @Override
     public void onTabSelected(MaterialTab tab) {
         pager.setCurrentItem(tab.getPosition());
