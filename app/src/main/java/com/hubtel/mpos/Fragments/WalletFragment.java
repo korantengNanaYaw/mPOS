@@ -51,20 +51,36 @@ public class WalletFragment extends Fragment {
     List<MenuItem> listOfMenuItems(){
 
         List<MenuItem> listOfMenuItems=new ArrayList<>();
+
         MenuItem menuItem=new MenuItem();
         menuItem.setTitle("Mobile Money");
+        menuItem.setImageIcon(R.drawable.ic_airtime);
         listOfMenuItems.add(menuItem);
 
-       /** menuItem=new MenuItem();
-        menuItem.setTitle("MPower Wallet");
-        listOfMenuItems.add(menuItem);***/
+
 
         menuItem=new MenuItem();
         menuItem.setTitle("Bank Card");
+        menuItem.setImageIcon(R.drawable.ic_credit);
         listOfMenuItems.add(menuItem);
 
 
-        return listOfMenuItems;
+        menuItem=new MenuItem();
+        menuItem.setTitle("Bill Pay");
+        menuItem.setImageIcon(R.drawable.ic_invoice);
+
+        listOfMenuItems.add(menuItem);
+
+        menuItem=new MenuItem();
+        menuItem.setTitle("Airtime");
+        menuItem.setImageIcon(R.drawable.ic_airtimeo);
+
+        listOfMenuItems.add(menuItem);
+
+
+
+        return  listOfMenuItems;
+
     }
 
 

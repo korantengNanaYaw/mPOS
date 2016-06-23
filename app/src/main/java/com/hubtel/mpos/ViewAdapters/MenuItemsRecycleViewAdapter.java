@@ -44,12 +44,21 @@ public class MenuItemsRecycleViewAdapter extends RecyclerView.Adapter<MenuItemsV
     }
 
     @Override
-    public void onBindViewHolder(MenuItemsViewHolder holder, int position) {
+    public void onBindViewHolder(final MenuItemsViewHolder holder, int position) {
         typefacer= new Typefacer();
-        MenuItem menuItem =data.get(position);
+        final MenuItem menuItem =data.get(position);
 
         holder.textView.setText(""+menuItem.getTitle());
         holder.textView.setTypeface(typefacer.squareLight());
+
+
+        holder.imageView.post(new Runnable() {
+            @Override
+            public void run() {
+
+                holder.imageView.setImageResource(menuItem.getImageIcon());
+            }
+        });
     }
 
     @Override
@@ -69,6 +78,6 @@ class MenuItemsViewHolder extends RecyclerView.ViewHolder {
     public MenuItemsViewHolder(View itemView) {
         super(itemView);
         textView = (TextView) itemView.findViewById(R.id.title);
-        //imageView = (ImageView) itemView.findViewById(R.id.image);
+        imageView = (ImageView) itemView.findViewById(R.id.icon);
     }
 }

@@ -70,27 +70,6 @@ public class MainActivity extends
 
     }
 
-
-
-    /**private void setTabHost(){
-
-        pager = (ViewPager) this.findViewById(R.id.pager);
-        setupViewPager(pager);
-
-        tabLayout = (TabLayout) findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(pager);
-
-    }
-
-    private void setupViewPager(ViewPager viewPager) {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new POSFRAGMENT(), "POS");
-        adapter.addFragment(new WalletFragment(), "Wallet");
-
-        viewPager.setAdapter(adapter);
-    }
-**/
-
     private void setTabHost() {
 
         tabHost = (MaterialTabHost) this.findViewById(R.id.materialTabHost);
@@ -117,7 +96,13 @@ public class MainActivity extends
 
         }
     }
+  /**  void startAnim(){
+        findViewById(R.id.avloadingIndicatorView).setVisibility(View.VISIBLE);
+    }
 
+    void stopAnim(){
+        findViewById(R.id.avloadingIndicatorView).setVisibility(View.GONE);
+    }**/
     private void inflateLayout(){
 
       //  View view;
@@ -129,6 +114,7 @@ public class MainActivity extends
            view=null;
            view = inflater.inflate(R.layout.payment_layout, null);
            nestedscroll.addView(view);
+        //   startAnim();
            //setTabHost();
 
        }catch (Exception ex){
@@ -150,9 +136,10 @@ public class MainActivity extends
             public void onMenuItemSelected(int itemId) {
                 switch (itemId) {
                     case R.id.payment:
-
+                       // startAnim();
                         inflateLayout();
                         setTabHost();
+                      // stopAnim();
                         // Snackbar.make(coordinatorLayout, "Recent Item Selected", Snackbar.LENGTH_LONG).show();
                         break;
                     case R.id.history:

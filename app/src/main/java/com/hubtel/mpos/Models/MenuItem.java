@@ -6,6 +6,7 @@ package com.hubtel.mpos.Models;
 public class MenuItem {
 
     private String title;
+    private int imageIcon;
 
 
     public String getTitle() {
@@ -14,5 +15,14 @@ public class MenuItem {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+
+    public int getImageIcon() {
+        return imageIcon;
+    }
+
+    public void setImageIcon(int imageIcon) {
+        this.imageIcon = imageIcon;
     }
 }
