@@ -12,9 +12,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.hubtel.mpos.CalculatorBrain;
+import com.hubtel.mpos.Utilities.CalculatorBrain;
 import com.hubtel.mpos.R;
-import com.hubtel.mpos.Typefacer;
+import com.hubtel.mpos.Utilities.Typefacer;
 
 import java.text.DecimalFormat;
 
@@ -25,7 +25,7 @@ import info.hoang8f.widget.FButton;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link POSFRAGMENT.OnFragmentInteractionListener} interface
+ * {@link POSFRAGMENT} interface
  * to handle interaction events.
  * Use the {@link POSFRAGMENT#newInstance} factory method to
  * create an instance of this fragment.
@@ -40,17 +40,18 @@ public class POSFRAGMENT extends Fragment implements View.OnClickListener {
     private String mParam1;
     private String mParam2;
 
-    private OnFragmentInteractionListener mListener;
+    private POSFRAGMENTOnFragmentInteractionListener mListener;
     Typefacer typefacer;
 
-String currency="GH₵";
+    String currency="GH₵";
     TextView smallscreen;
     private Boolean userIsInTheMiddleOfTypingANumber = false;
     private CalculatorBrain mCalculatorBrain;
     private static final String DIGITS = "0123456789.";
 
     EditText display;
-
+    FButton checkOut;
+    FButton buttonCart;
     private  int counter;
     DecimalFormat df = new DecimalFormat("@###########");
 
@@ -130,18 +131,23 @@ String currency="GH₵";
         forget.setOnClickListener(this);
         forget.setTypeface(typefacer.squareRegular());
 
-        FButton checkOut=(FButton)v.findViewById(R.id.checkOut);
+        checkOut=(FButton)v.findViewById(R.id.checkOut);
         checkOut.setTypeface(typefacer.squareLight());
 
-        FButton buttonCart=(FButton)v.findViewById(R.id.buttonCart);
+        buttonCart=(FButton)v.findViewById(R.id.buttonCart);
         buttonCart.setTypeface(typefacer.squareLight());
-
+        buttonCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            mListener.POSFRAGMENTonFragmentInteraction(smallscreen.getText().toString());
+                smallscreen.setText("");
+            }
+        });
 
 
       //  ImageButton clear=(ImageButton) v.findViewById(R.id.buttonClear);
 
         //clear.setTypeface(typefacer.squareLight());
-
 
 
 
@@ -175,9 +181,9 @@ String currency="GH₵";
     }
 
     // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
+    public void onButtonPressed(String uri) {
         if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
+            mListener.POSFRAGMENTonFragmentInteraction(uri);
         }
     }
 
@@ -190,8 +196,8 @@ String currency="GH₵";
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
+        if (context instanceof POSFRAGMENTOnFragmentInteractionListener) {
+            mListener = (POSFRAGMENTOnFragmentInteractionListener) context;
         } else {
             throw new RuntimeException(context.toString()
                     + " must implement OnFragmentInteractionListener");
@@ -272,8 +278,8 @@ String currency="GH₵";
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
      */
-    public interface OnFragmentInteractionListener {
+    public interface POSFRAGMENTOnFragmentInteractionListener {
         // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
+        void POSFRAGMENTonFragmentInteraction(String uri);
     }
 }

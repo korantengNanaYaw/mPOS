@@ -17,10 +17,11 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.hubtel.mpos.POSFRAGMENT;
+import com.hubtel.mpos.Fragments.POSFRAGMENT;
 import com.hubtel.mpos.R;
-import com.hubtel.mpos.Typefacer;
-import com.hubtel.mpos.WalletFragment;
+import com.hubtel.mpos.Utilities.Typefacer;
+import com.hubtel.mpos.Fragments.WalletFragment;
+import com.hubtel.mpos.Utilities.Utility;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnMenuTabSelectedListener;
 
@@ -28,8 +29,9 @@ import it.neokree.materialtabs.MaterialTab;
 import it.neokree.materialtabs.MaterialTabHost;
 import it.neokree.materialtabs.MaterialTabListener;
 
-public class MainActivity extends AppCompatActivity implements MaterialTabListener,
-        POSFRAGMENT.OnFragmentInteractionListener,WalletFragment.OnFragmentInteractionListener, View.OnClickListener {
+public class MainActivity extends
+        AppCompatActivity implements MaterialTabListener,
+        POSFRAGMENT.POSFRAGMENTOnFragmentInteractionListener,WalletFragment.OnFragmentInteractionListener, View.OnClickListener {
     CoordinatorLayout coordinatorLayout;
     Toolbar toolbar;
     TextView toolbarTitle;
@@ -49,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
          inflater = (LayoutInflater)MainActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         typefacer=new Typefacer();
-        setToolBar("mPos");
+        setToolBar("MPower POS");
         coordinatorLayout=(CoordinatorLayout)findViewById(R.id.coordinate);
         setBottomNavigation(savedInstanceState);
         setViewHolder();
@@ -154,10 +156,10 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
                         // Snackbar.make(coordinatorLayout, "Recent Item Selected", Snackbar.LENGTH_LONG).show();
                         break;
                     case R.id.history:
-                        nestedscroll.removeAllViewsInLayout();
+                        nestedscroll.removeAllViews();
                         break;
                     case R.id.setting:
-                        nestedscroll.removeAllViewsInLayout();
+                        nestedscroll.removeAllViews();
                         // Snackbar.make(coordinatorLayout, "Location Item Selected", Snackbar.LENGTH_LONG).show();
                         break;
 
@@ -190,6 +192,43 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
 
     @Override
     public void onClick(View v) {
+
+    }
+
+    @Override
+    public void POSFRAGMENTonFragmentInteraction(String uri) {
+
+        try{
+            double val1; double amount;
+            String toolbarString;
+            TextView toolbarnotify=(TextView)findViewById(R.id.toolbarnotify);
+
+            toolbarnotify.setVisibility(View.VISIBLE);
+            toolbarnotify.setTypeface(typefacer.squareLight());
+            toolbarString=toolbarnotify.getText().toString();
+
+            if(toolbarString.isEmpty()) {
+                val1 = 0;
+            }else {
+                String trimmedString = toolbarString.replace("Ghs", "").toString();
+                String string4Double=Utility.prepareString4double(trimmedString);
+                val1 = Double.parseDouble(string4Double);
+
+            }
+
+            amount=Double.valueOf(uri);
+
+            double total=val1+amount;
+
+            String formattedAmount= Utility.formatMoney(total);
+
+            toolbarnotify.setText(formattedAmount);
+
+        }catch (Exception e){
+
+         e.printStackTrace();
+
+        }
 
     }
 
@@ -226,7 +265,7 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
     **/
     private class ViewPagerAdapter extends FragmentStatePagerAdapter {
         private String[] titles = {
-                "KeyPad", "MPOS"
+                "MPOS", "kEYPAD"
         };
 
         Fragment fragment=null;
@@ -243,19 +282,15 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
           if(num==0)
             {
 
-                // actionButton.setVisibility(View.GONE);
+
+
+                fragment=new WalletFragment();
+            } if(num==1)
+            {
+
                 fragment=new POSFRAGMENT();
 
 
-            } if(num==1)
-            {
-               // Button checkoutBtn = (Button)findViewById(R.id.checkoutbtn);
-            //    checkoutBtn.setVisibility(View.INVISIBLE);
-                // actionButton.setVisibility(View.GONE);
-                fragment=new WalletFragment();
-                // actionButton.setVisibility(View.GONE);
-                // fragment=new MiddleFragment();
-                //  new connectOptician().execute();
 
             }
             return fragment;

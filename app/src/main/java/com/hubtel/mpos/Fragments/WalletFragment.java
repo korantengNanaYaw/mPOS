@@ -12,8 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.hubtel.mpos.Application.Application;
-import com.hubtel.mpos.MenuItem;
-import com.hubtel.mpos.MenuItemsRecycleViewAdapter;
+import com.hubtel.mpos.Models.MenuItem;
+import com.hubtel.mpos.ViewAdapters.MenuItemsRecycleViewAdapter;
 import com.hubtel.mpos.R;
 
 import java.util.ArrayList;
@@ -55,10 +55,9 @@ public class WalletFragment extends Fragment {
         menuItem.setTitle("Mobile Money");
         listOfMenuItems.add(menuItem);
 
-        menuItem=new MenuItem();
+       /** menuItem=new MenuItem();
         menuItem.setTitle("MPower Wallet");
-        listOfMenuItems.add(menuItem);
-
+        listOfMenuItems.add(menuItem);***/
 
         menuItem=new MenuItem();
         menuItem.setTitle("Bank Card");
