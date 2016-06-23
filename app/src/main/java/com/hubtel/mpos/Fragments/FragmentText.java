@@ -1,4 +1,4 @@
-package com.hubtel.mpos;
+package com.hubtel.mpos.Fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.hubtel.mpos.Application.Application;
 
 /**
  * Created by apple on 21/06/16.

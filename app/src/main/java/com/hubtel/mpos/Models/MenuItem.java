@@ -1,4 +1,4 @@
-package com.hubtel.mpos;
+package com.hubtel.mpos.Models;
 
 /**
  * Created by apple on 22/06/16.

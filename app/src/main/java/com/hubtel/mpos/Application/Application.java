@@ -1,4 +1,4 @@
-package com.hubtel.mpos;
+package com.hubtel.mpos.Application;
 
 import android.content.Context;
 

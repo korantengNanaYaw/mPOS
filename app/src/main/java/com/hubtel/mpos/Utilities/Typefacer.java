@@ -1,7 +1,9 @@
-package com.hubtel.mpos;
+package com.hubtel.mpos.Utilities;
 
 import android.content.res.AssetManager;
 import android.graphics.Typeface;
+
+import com.hubtel.mpos.Application.Application;
 
 /**
  * Created by apple on 20/06/16.

@@ -1,4 +1,4 @@
-package com.hubtel.mpos;
+package com.hubtel.mpos.Utilities;
 
 /**
  * Created by apple on 21/06/16.

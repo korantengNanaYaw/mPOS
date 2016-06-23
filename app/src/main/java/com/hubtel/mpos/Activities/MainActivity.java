@@ -1,4 +1,4 @@
-package com.hubtel.mpos;
+package com.hubtel.mpos.Activities;
 
 import android.content.Context;
 import android.net.Uri;
@@ -6,26 +6,23 @@ import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.NestedScrollView;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.hubtel.mpos.POSFRAGMENT;
+import com.hubtel.mpos.R;
+import com.hubtel.mpos.Typefacer;
+import com.hubtel.mpos.WalletFragment;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnMenuTabSelectedListener;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import it.neokree.materialtabs.MaterialTab;
 import it.neokree.materialtabs.MaterialTabHost;
@@ -143,6 +140,7 @@ public class MainActivity extends AppCompatActivity implements MaterialTabListen
     private void setBottomNavigation( Bundle savedInstanceState){
         BottomBar bottomBar = BottomBar.attachShy((CoordinatorLayout) findViewById(R.id.coordinate),
                 findViewById(R.id.myScrollingContent), savedInstanceState);
+
        // bottomBar.setBackgroundColor(R.color.colorAccent);
         //BottomBar bottomBar = BottomBar.attach(this, savedInstanceState);
         bottomBar.setItemsFromMenu(R.menu.three_buttons_menu, new OnMenuTabSelectedListener() {

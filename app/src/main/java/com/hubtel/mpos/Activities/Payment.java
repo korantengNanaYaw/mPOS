@@ -1,7 +1,9 @@
-package com.hubtel.mpos;
+package com.hubtel.mpos.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.hubtel.mpos.R;
 
 public class Payment extends AppCompatActivity {
 
