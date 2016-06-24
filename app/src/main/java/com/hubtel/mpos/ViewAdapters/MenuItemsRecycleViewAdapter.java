@@ -56,7 +56,7 @@ public class MenuItemsRecycleViewAdapter extends RecyclerView.Adapter<MenuItemsV
             @Override
             public void run() {
 
-                holder.imageView.setImageResource(menuItem.getImageIcon());
+                //holder.imageView.setImageResource(menuItem.getImageIcon());
             }
         });
     }

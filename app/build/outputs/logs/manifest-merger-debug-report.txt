@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml:2:1-23:12
+ADDED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml:2:1-28:12
 	package
 		ADDED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml:3:5-30
 		INJECTED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml:2:1-23:1
 		INJECTED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml:5:5-21:19
+ADDED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml:5:5-26:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
@@ -72,6 +72,13 @@ MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/
 MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml:9:9-41
 	android:supportsRtl
@@ -102,6 +109,18 @@ activity#com.hubtel.mpos.Activities.Payment
 ADDED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml:19:9-56
 	android:name
 		ADDED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml:19:19-53
+activity#com.hubtel.mpos.Activities.MobileMoney
+ADDED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml:20:9-25:20
+	android:screenOrientation
+		ADDED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml:21:13-49
+	android:name
+		ADDED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml:20:19-57
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml:22:13-24:60
+	android:value
+		ADDED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml:24:17-57
+	android:name
+		ADDED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml:23:17-63
 uses-sdk
 INJECTED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
@@ -163,6 +182,14 @@ MERGED from [info.hoang8f:fbutton:1.0.5] /Users/apple/Downloads/MPOS/app/build/i
 MERGED from [com.android.support:recyclerview-v7:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.wang.avi:library:1.0.5] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.wang.avi/library/1.0.5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [com.github.florent37:materialtextfield:1.0.5] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.github.florent37/materialtextfield/1.0.5/AndroidManifest.xml:8:5-10:41
 MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43

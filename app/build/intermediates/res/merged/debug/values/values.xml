@@ -149,6 +149,7 @@
     <declare-styleable name="LinearLayoutCompat_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_weight"/><attr name="android:layout_gravity"/></declare-styleable>
     <declare-styleable name="ListPopupWindow"><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/></declare-styleable>
     <declare-styleable name="MaterialTabHost"><attr format="boolean" name="hasIcons"/><attr format="color" name="primaryColor"/><attr format="color" name="accentColor"/><attr format="color" name="iconColor"/><attr format="color" name="textColor"/></declare-styleable>
+    <declare-styleable name="MaterialTextField"><attr format="dimension" name="mtf_cardCollapsedHeight"/><attr format="color" name="mtf_labelColor"/><attr format="reference" name="mtf_image"/><attr format="integer" name="mtf_animationDuration"/><attr format="boolean" name="mtf_openKeyboardOnFocus"/></declare-styleable>
     <declare-styleable name="MenuGroup"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:checkableBehavior"/><attr name="android:visible"/><attr name="android:enabled"/></declare-styleable>
     <declare-styleable name="MenuItem"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:title"/><attr name="android:titleCondensed"/><attr name="android:icon"/><attr name="android:alphabeticShortcut"/><attr name="android:numericShortcut"/><attr name="android:checkable"/><attr name="android:checked"/><attr name="android:visible"/><attr name="android:enabled"/><attr name="android:onClick"/><attr name="showAsAction"><flag name="never" value="0"/><flag name="ifRoom" value="1"/><flag name="always" value="2"/><flag name="withText" value="4"/><flag name="collapseActionView" value="8"/></attr><attr format="reference" name="actionLayout"/><attr format="string" name="actionViewClass"/><attr format="string" name="actionProviderClass"/></declare-styleable>
     <declare-styleable name="MenuView"><attr name="android:itemTextAppearance"/><attr name="android:horizontalDivider"/><attr name="android:verticalDivider"/><attr name="android:headerBackground"/><attr name="android:itemBackground"/><attr name="android:windowAnimationStyle"/><attr name="android:itemIconDisabledAlpha"/><attr format="boolean" name="preserveIconSpacing"/></declare-styleable>
@@ -288,6 +289,9 @@
     <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
     <dimen name="materialTextTab">14sp</dimen>
+    <dimen name="mtf_cardHeight_final">55dp</dimen>
+    <dimen name="mtf_cardHeight_initial">4dp</dimen>
+    <dimen name="mtf_corner_radius">4dp</dimen>
     <dimen name="notification_large_icon_height">64dp</dimen>
     <dimen name="notification_large_icon_width">64dp</dimen>
     <dimen name="notification_subtext_size">12dp</dimen>
@@ -334,6 +338,7 @@
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="action_settings">Settings</string>
     <string name="all_items">All Items</string>
     <string name="app_name">mPos</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
@@ -369,6 +374,7 @@
     <string name="buttonToggleSign">+/-</string>
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">Hello world!</string>
     <string name="search_all_items">Search All Items</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="stock_categories">Categories</string>
@@ -1863,6 +1869,17 @@
         <item name="android:windowActionBar">false</item>
         <item name="windowActionBar">false</item>
 
+    </style>
+    <style name="continueButton" parent="@android:style/Widget.Button">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.5</item>
+        <item name="android:background">@drawable/continue_button</item>
+        <item name="android:padding">8dip</item>
     </style>
     <style name="keypadButton" parent="@android:style/Widget.Button">
         <item name="android:textSize">12sp</item>

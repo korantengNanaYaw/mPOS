@@ -31,7 +31,9 @@ import it.neokree.materialtabs.MaterialTabListener;
 
 public class MainActivity extends
         AppCompatActivity implements MaterialTabListener,
-        POSFRAGMENT.POSFRAGMENTOnFragmentInteractionListener,WalletFragment.OnFragmentInteractionListener, View.OnClickListener {
+        POSFRAGMENT.POSFRAGMENTOnFragmentInteractionListener,
+        WalletFragment.OnFragmentInteractionListener,
+        View.OnClickListener {
     CoordinatorLayout coordinatorLayout;
     Toolbar toolbar;
     TextView toolbarTitle;

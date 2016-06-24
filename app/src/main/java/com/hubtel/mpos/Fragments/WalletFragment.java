@@ -1,16 +1,22 @@
 package com.hubtel.mpos.Fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.GestureDetector;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Switch;
+import android.widget.TextView;
 
+import com.hubtel.mpos.Activities.MobileMoney;
 import com.hubtel.mpos.Application.Application;
 import com.hubtel.mpos.Models.MenuItem;
 import com.hubtel.mpos.ViewAdapters.MenuItemsRecycleViewAdapter;
@@ -54,26 +60,26 @@ public class WalletFragment extends Fragment {
 
         MenuItem menuItem=new MenuItem();
         menuItem.setTitle("Mobile Money");
-        menuItem.setImageIcon(R.drawable.ic_airtime);
+       // menuItem.setImageIcon(R.drawable.ic_airtime);
         listOfMenuItems.add(menuItem);
 
 
 
         menuItem=new MenuItem();
         menuItem.setTitle("Bank Card");
-        menuItem.setImageIcon(R.drawable.ic_credit);
+      //  menuItem.setImageIcon(R.drawable.ic_credit);
         listOfMenuItems.add(menuItem);
 
 
         menuItem=new MenuItem();
         menuItem.setTitle("Bill Pay");
-        menuItem.setImageIcon(R.drawable.ic_invoice);
+       // menuItem.setImageIcon(R.drawable.ic_invoice);
 
         listOfMenuItems.add(menuItem);
 
         menuItem=new MenuItem();
         menuItem.setTitle("Airtime");
-        menuItem.setImageIcon(R.drawable.ic_airtimeo);
+      //  menuItem.setImageIcon(R.drawable.ic_airtimeo);
 
         listOfMenuItems.add(menuItem);
 
@@ -133,6 +139,29 @@ public class WalletFragment extends Fragment {
         menuItemsRecycleViewAdapter=new MenuItemsRecycleViewAdapter(Application.getAppContext(),listOfMenuItems());
         RecyclerView.LayoutManager mlayout=new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL,false);
         walletRecycle.setAdapter(menuItemsRecycleViewAdapter);
+        walletRecycle.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), walletRecycle, new ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+
+                TextView tv=(TextView)view.findViewById(R.id.title);
+                String value=tv.getText().toString();
+
+                switch(value){
+
+                    case "Mobile Money":
+
+                        Intent intent=new Intent(getActivity(), MobileMoney.class);
+                        startActivity(intent);
+                        break;
+
+                }
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+
+            }
+        }));
         walletRecycle.setLayoutManager(mlayout);
     }
 
@@ -166,5 +195,60 @@ public class WalletFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+
+    static class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
+        private GestureDetector gestureDetector;
+        private  ClickListener clickListener;
+
+        public RecyclerTouchListener(Context context, final RecyclerView recyclerView, final ClickListener clickListener){
+            this.clickListener=clickListener;
+            gestureDetector=new GestureDetector(context,new GestureDetector.SimpleOnGestureListener(){
+
+                @Override
+                public boolean onSingleTapUp(MotionEvent e) {
+                    return true;
+                }
+
+                @Override
+                public void onLongPress(MotionEvent e) {
+                    View child= recyclerView.findChildViewUnder(e.getX(),e.getY());
+                    if(child!=null && clickListener!=null){
+
+
+                        clickListener.onLongClick(child,recyclerView.getChildPosition(child));
+                    }
+
+                }
+            });
+        }
+        @Override
+        public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+            View child= rv.findChildViewUnder(e.getX(),e.getY());
+            if(child!=null && clickListener!=null && gestureDetector.onTouchEvent(e)){
+
+
+                clickListener.onClick(child, rv.getChildPosition(child));
+            }
+            return false;
+        }
+
+        @Override
+        public void onTouchEvent(RecyclerView rv, MotionEvent e) {
+
+        }
+
+        @Override
+        public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+
+        }
+    }
+
+    public static interface ClickListener{
+
+        public void onClick(View view,int position);
+        public void onLongClick(View view,int position);
+
     }
 }

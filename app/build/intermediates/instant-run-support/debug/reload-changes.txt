@@ -1,11 +1,2 @@
-CHANGED,/Users/apple/Downloads/MPOS/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/hubtel/mpos/R$menu$override.class
-CHANGED,/Users/apple/Downloads/MPOS/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/hubtel/mpos/R$style$override.class
-CHANGED,/Users/apple/Downloads/MPOS/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/hubtel/mpos/Activities/MainActivity$override.class
-CHANGED,/Users/apple/Downloads/MPOS/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/hubtel/mpos/R$styleable$override.class
-CHANGED,/Users/apple/Downloads/MPOS/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/hubtel/mpos/R$layout$override.class
-CHANGED,/Users/apple/Downloads/MPOS/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/hubtel/mpos/R$id$override.class
-CHANGED,/Users/apple/Downloads/MPOS/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/hubtel/mpos/R$integer$override.class
-CHANGED,/Users/apple/Downloads/MPOS/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/hubtel/mpos/Activities/MainActivity$2$override.class
+CHANGED,/Users/apple/Downloads/MPOS/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/hubtel/mpos/Fragments/WalletFragment$override.class
 CHANGED,/Users/apple/Downloads/MPOS/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
-CHANGED,/Users/apple/Downloads/MPOS/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/hubtel/mpos/R$mipmap$override.class
-CHANGED,/Users/apple/Downloads/MPOS/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/hubtel/mpos/R$string$override.class

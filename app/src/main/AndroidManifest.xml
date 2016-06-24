@@ -17,7 +17,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activities.Payment" />
-
+        <activity android:name=".Activities.MobileMoney"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

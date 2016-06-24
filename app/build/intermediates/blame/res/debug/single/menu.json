@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/menu/menu_main.xml",
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.github.florent37/materialtextfield/1.0.5/res/menu/menu_main.xml"
+    },
+    {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/menu/three_buttons_menu.xml",
         "source": "/Users/apple/Downloads/MPOS/app/src/main/res/menu/three_buttons_menu.xml"
     }

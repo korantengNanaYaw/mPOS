@@ -30,6 +30,13 @@
             </intent-filter>
         </activity>
         <activity android:name="com.hubtel.mpos.Activities.Payment" />
+        <activity
+            android:name="com.hubtel.mpos.Activities.MobileMoney"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
