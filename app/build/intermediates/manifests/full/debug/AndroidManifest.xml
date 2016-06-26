@@ -8,6 +8,10 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="23" />
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <!-- Needed for SDK HTTP calls -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -36,6 +40,31 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="io.mpos.ui.paybutton.view.TransactionActivity"
+            android:theme="@style/Theme.mpos.ui" >
+        </activity>
+        <activity
+            android:name="io.mpos.ui.paybutton.view.SignatureActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/Theme.mpos.ui" >
+        </activity>
+        <activity
+            android:name="io.mpos.ui.summarybutton.view.TransactionSummaryActivity"
+            android:theme="@style/Theme.mpos.ui" >
+        </activity>
+        <activity
+            android:name="io.mpos.ui.printbutton.view.PrintReceiptActivity"
+            android:theme="@style/Theme.mpos.ui" >
+        </activity>
+        <activity
+            android:name="io.mpos.ui.acquirer.view.LoginActivity"
+            android:theme="@style/Theme.mpos.ui" >
+        </activity>
+        <activity
+            android:name="io.mpos.ui.acquirer.view.SettingsActivity"
+            android:theme="@style/Theme.mpos.ui" >
         </activity>
     </application>
 

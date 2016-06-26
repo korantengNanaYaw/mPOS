@@ -121,9 +121,28 @@
                     "startLine": 8,
                     "startColumn": 4,
                     "startOffset": 462,
-                    "endLine": 11,
+                    "endColumn": 70,
+                    "endOffset": 528
+                },
+                "from": {
+                    "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/res/values-land/values-land.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 70,
+                        "endOffset": 121
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 533,
+                    "endLine": 12,
                     "endColumn": 12,
-                    "endOffset": 639
+                    "endOffset": 710
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/values-land/values-land.xml",

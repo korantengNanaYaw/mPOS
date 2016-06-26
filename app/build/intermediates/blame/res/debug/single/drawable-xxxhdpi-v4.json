@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_airtimeo.png",
-        "source": "/Users/apple/Downloads/MPOS/app/src/main/res/drawable-xxxhdpi/ic_airtimeo.png"
-    },
-    {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_star_black_36dp.png",
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-xxxhdpi-v4/abc_ic_star_black_36dp.png"
     },
@@ -68,10 +64,6 @@
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-xxxhdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_credit.png",
-        "source": "/Users/apple/Downloads/MPOS/app/src/main/res/drawable-xxxhdpi/ic_credit.png"
-    },
-    {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_payment.png",
         "source": "/Users/apple/Downloads/MPOS/app/src/main/res/drawable-xxxhdpi/ic_payment.png"
     },
@@ -82,6 +74,10 @@
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/mpu_ic_help_outline_white_24dp.png",
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/res/drawable-xxxhdpi-v4/mpu_ic_help_outline_white_24dp.png"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/right_arrow.png",
@@ -104,20 +100,16 @@
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_mobilepay.png",
-        "source": "/Users/apple/Downloads/MPOS/app/src/main/res/drawable-xxxhdpi/ic_mobilepay.png"
-    },
-    {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_search_api_mtrl_alpha.png",
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-xxxhdpi-v4/abc_ic_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png",
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/left_arrow.png",
@@ -128,20 +120,12 @@
         "source": "/Users/apple/Downloads/MPOS/app/src/main/res/drawable-xxxhdpi/ic_history.png"
     },
     {
-        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_invoice.png",
-        "source": "/Users/apple/Downloads/MPOS/app/src/main/res/drawable-xxxhdpi/ic_invoice.png"
-    },
-    {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_shoppingcart.png",
         "source": "/Users/apple/Downloads/MPOS/app/src/main/res/drawable-xxxhdpi/ic_shoppingcart.png"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
-        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_airtime.png",
-        "source": "/Users/apple/Downloads/MPOS/app/src/main/res/drawable-xxxhdpi/ic_airtime.png"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_check_to_on_mtrl_000.png",

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ mpos-ui : http://www.payworksmobile.com
+  ~
+  ~ The MIT License (MIT)
+  ~
+  ~ Copyright (c) 2016 payworks GmbH
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  ~ THE SOFTWARE.
+  -->
+<resources>
+<string name="MPUAbort">"Afbreken"</string>
+<string name="MPURetry">"Herhalen"</string>
+<string name="MPUSendReceipt">"Betalingsbewijs sturen"</string>
+<string name="MPUResendReceipt">"Betalingsbewijs opnieuw sturen"</string>
+<string name="MPUClose">"Sluiten"</string>
+<string name="MPUPaymentSuccessful">"Betaling geslaagd."</string>
+<string name="MPURefunded">"Terugbetaald"</string>
+<string name="MPUDeclined">"Geweigerd"</string>
+<string name="MPUAborted">"Afgebroken"</string>
+<string name="MPUPreauthorized">"Vooraf geautoriseerd"</string>
+<string name="MPUTotal">"Totaal"</string>
+<string name="MPUSale">"Betaling"</string>
+<string name="MPUUnknown">"Onbekend"</string>
+<string name="MPURefundApproved">"Terugbetaling geslaagd."</string>
+<string name="MPURefundDeclined">"Terugbetaling geweigerd."</string>
+<string name="MPURefundAborted">"Terugbetaling afgebroken."</string>
+<string name="MPURefundPayment">"Terugbetaling transactie"</string>
+<string name="MPUCapturePayment">"Book betaling"</string>
+<string name="MPURefundPrompt">"Bent u zeker dat u wilt deze transactie terug te betalen?"</string>
+<string name="MPUCapturePrompt">"Weet u zeker dat u deze betaling wilt boeken?"</string>
+<string name="MPUTransactionTypeSale">"Betaling"</string>
+<string name="MPUTransactionTypeRefund">"Terugbetaling"</string>
+<string name="MPUTransactionTypePreauthorization">"Pre-autorisatie"</string>
+<string name="MPURefund">"Terugbetaling"</string>
+<string name="MPUCapture">"Boeken"</string>
+<string name="MPUSummary">"Overzicht"</string>
+<string name="MPUInvalidEmailAddress">"Ongeldig e-mailadres"</string>
+<string name="MPUEnterValidEmailAddress">"Vul een geldig e-mailadres in."</string>
+<string name="MPUOK">"OK"</string>
+<string name="MPUCouldNotSendReceipt">"Kon Betalingsbewijs niet verzenden"</string>
+<string name="MPUPleaseTryAgain">"Probeer het nog eens."</string>
+<string name="MPUSelectAccount">"Selecteer rekening"</string>
+<string name="MPUEnterEmailAddress">"E-mailadres invoeren"</string>
+<string name="MPUSend">"Sturen"</string>
+<string name="MPUResend">"Opnieuw sturen"</string>
+<string name="MPUContinue">"Verder"</string>
+<string name="MPUBackButtonDisabled">"De functie "Terug" is gedeactiveerd tijdens de betaalprocedure. Gebruik de functies hierboven."</string>
+<string name="MPUSignatureStatusLine">"Hiermee machtig ik de betaling van %1$s."</string>
+<string name="MPUError">"Fout"</string>
+<string name="MPUReceiptSent">"Betalingsbewijs verzonden."</string>
+<string name="MPUFetching">"Laden van de transactie"</string>
+<string name="MPULoading">"Laden..."</string>
+<string name="MPUVersion">"Versie"</string>
+<string name="MPULoggedInAs">"Aangemeld als"</string>
+<string name="MPULogout">"Afmelden"</string>
+<string name="MPUHelp">"Help"</string>
+<string name="MPUForgot">"Wachtwoord vergeten?"</string>
+<string name="MPULogin">"Aanmelden"</string>
+<string name="MPUEmail">"E-mail"</string>
+<string name="MPUEmailAddress">"E-mailadres"</string>
+<string name="MPUPassword">"Wachtwoord"</string>
+<string name="MPURequired">"vereist"</string>
+<string name="MPUWrongCredentials">"Het ingevoerde wachtwoord is fout of er bestaat nog geen account voor uw e-mailadres."</string>
+<string name="MPUUnknownUsername">"Voor dit e-mailadres bestaat geen account."</string>
+<string name="MPUBack">"Terug"</string>
+<string name="MPUPasswordReset">"Wij hebben u een e-mail gestuurd. Controleer uw inbox voor de volgende stappen."</string>
+<string name="MPURequestPassword">"Wachtwoord opnieuw instellen"</string>
+<string name="MPUActions">"Acties"</string>
+<string name="MPUSettings">"Instellingen"</string>
+<string name="MPUInfo">"Info"</string>
+<string name="MPUVisa">"Visa"</string>
+<string name="MPUMastercard">"Mastercard"</string>
+<string name="MPUMaestro">"Maestro"</string>
+<string name="MPUAmericanExpress">"American Express"</string>
+<string name="MPUReprint">"Opnieuw printen"</string>
+<string name="MPUPrinting">"Afdrukken..."</string>
+<string name="MPUPrint">"Print"</string>
+<string name="MPUPartiallyCaptured">"van Pre-autorisatie voor %1$s"</string>
+</resources>

@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.hubtel.mpos.Utilities.CalculatorBrain;
 import com.hubtel.mpos.R;
 import com.hubtel.mpos.Utilities.Typefacer;
+import com.hubtel.mpos.Utilities.Utility;
 
 import java.text.DecimalFormat;
 
@@ -133,21 +134,26 @@ public class POSFRAGMENT extends Fragment implements View.OnClickListener {
 
         checkOut=(FButton)v.findViewById(R.id.checkOut);
         checkOut.setTypeface(typefacer.squareLight());
+        checkOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                mListener.POSFRAGMENTonFragmentInteraction("checkout", Utility.formatMoney(Double.parseDouble(smallscreen.getText().toString())));
+
+
+
+            }
+        });
 
         buttonCart=(FButton)v.findViewById(R.id.buttonCart);
         buttonCart.setTypeface(typefacer.squareLight());
         buttonCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            mListener.POSFRAGMENTonFragmentInteraction(smallscreen.getText().toString());
+            mListener.POSFRAGMENTonFragmentInteraction("add2cart",smallscreen.getText().toString());
                 smallscreen.setText("");
             }
         });
-
-
-      //  ImageButton clear=(ImageButton) v.findViewById(R.id.buttonClear);
-
-        //clear.setTypeface(typefacer.squareLight());
 
 
 
@@ -180,12 +186,7 @@ public class POSFRAGMENT extends Fragment implements View.OnClickListener {
         return inflater.inflate(R.layout.calculator_layout, container, false);
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(String uri) {
-        if (mListener != null) {
-            mListener.POSFRAGMENTonFragmentInteraction(uri);
-        }
-    }
+
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
@@ -268,18 +269,14 @@ public class POSFRAGMENT extends Fragment implements View.OnClickListener {
         }
 
     }
-    /**
-     * This interface must be implemented by activities that contain this
-     * fragment to allow an interaction in this fragment to be communicated
-     * to the activity and potentially other fragments contained in that
-     * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
-     */
+
+
+
+
+
+
     public interface POSFRAGMENTOnFragmentInteractionListener {
         // TODO: Update argument type and name
-        void POSFRAGMENTonFragmentInteraction(String uri);
+        void POSFRAGMENTonFragmentInteraction(String mode,String uri);
     }
 }

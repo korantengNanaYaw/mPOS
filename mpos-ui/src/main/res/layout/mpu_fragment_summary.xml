@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ mpos-ui : http://www.payworksmobile.com
+  ~
+  ~ The MIT License (MIT)
+  ~
+  ~ Copyright (c) 2015 payworks GmbH
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  ~ THE SOFTWARE.
+  -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/mpu_activity_vertical_margin_half"
+        android:paddingLeft="@dimen/mpu_activity_horizontal_margin_half"
+        android:paddingRight="@dimen/mpu_activity_horizontal_margin_half"
+        android:paddingTop="@dimen/mpu_activity_vertical_margin_half">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/mpu_summary_receipt_card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="@dimen/mpu_card_radius"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/mpu_content_padding">
+
+                    <TextView
+                        android:id="@+id/mpu_summary_status_view"
+                        style="@style/MpuCardHeaderTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        tools:text="Sale"/>
+
+                    <TextView
+                        android:id="@+id/mpu_summary_amount_view"
+                        style="@style/MpuCardHeaderAmountTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        tools:text="$12.34"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mpu_summary_tx_history_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/mpu_history_background"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/mpu_summary_divider_header_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/mpu_divider"
+                    android:layout_marginLeft="@dimen/mpu_divider_padding"
+                    android:layout_marginRight="@dimen/mpu_divider_padding"
+                    android:background="@color/mpu_divider"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mpu_summary_scheme_view"
+                        style="@style/MpuCardBodyTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/mpu_issuer_card_icon_size"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/mpu_card_image_padding"
+                        android:paddingRight="@dimen/mpu_card_image_padding"
+                        tools:drawableLeft="@drawable/mpu_visacard_image"
+                        tools:text="Unknown"/>
+
+                    <TextView
+                        android:id="@+id/mpu_summary_account_number_view"
+                        style="@style/MpuAccountNoTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/mpu_content_padding"
+                        tools:text="XXXX XXXX XXXX 1234"/>
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/mpu_summary_divider_scheme_accno_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/mpu_divider"
+                    android:layout_marginLeft="@dimen/mpu_divider_padding"
+                    android:layout_marginRight="@dimen/mpu_divider_padding"
+                    android:background="@color/mpu_divider"/>
+
+                <TextView
+                    android:id="@+id/mpu_summary_subject_view"
+                    style="@style/MpuCardBodyTextStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/mpu_content_padding"
+                    tools:text="How much wood would a woodchuck chuck if a woodchuck could chuck wood?"/>
+
+                <View
+                    android:id="@+id/mpu_summary_divider_action_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/mpu_divider"
+                    android:background="@color/mpu_divider"/>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/mpu_summary_capture_button"
+                        style="@style/mpos.ui.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/MPUCapture"/>
+
+                    <Button
+                        android:id="@+id/mpu_summary_refund_button"
+                        style="@style/mpos.ui.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignWithParentIfMissing="true"
+                        android:layout_toLeftOf="@id/mpu_summary_capture_button"
+                        android:text="@string/MPURefund"/>
+
+                    <Button
+                        android:id="@+id/mpu_summary_retry_button"
+                        style="@style/mpos.ui.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignWithParentIfMissing="true"
+                        android:layout_toLeftOf="@+id/mpu_summary_refund_button"
+                        android:text="@string/MPURetry"/>
+
+                    <Button
+                        android:id="@+id/mpu_summary_print_receipt_button"
+                        style="@style/mpos.ui.Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/MPUPrint"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/mpu_summary_datetime_view"
+            style="@style/MpuTimestampTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mpu_card_timestamp_margin"
+            android:layout_marginBottom="@dimen/mpu_card_timestamp_margin"
+            android:gravity="center"
+            tools:text="9:05 am / Today"/>
+
+    </LinearLayout>
+</ScrollView>

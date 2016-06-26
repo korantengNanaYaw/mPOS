@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ mpos-ui : http://www.payworksmobile.com
+  ~
+  ~ The MIT License (MIT)
+  ~
+  ~ Copyright (c) 2016 payworks GmbH
+  ~
+  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+  ~ of this software and associated documentation files (the "Software"), to deal
+  ~ in the Software without restriction, including without limitation the rights
+  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  ~ copies of the Software, and to permit persons to whom the Software is
+  ~ furnished to do so, subject to the following conditions:
+  ~
+  ~ The above copyright notice and this permission notice shall be included in
+  ~ all copies or substantial portions of the Software.
+  ~
+  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  ~ THE SOFTWARE.
+  -->
+<resources>
+<string name="MPUAbort">"Cancelar"</string>
+<string name="MPURetry">"Volver a intentar"</string>
+<string name="MPUSendReceipt">"Enviar Recibo"</string>
+<string name="MPUResendReceipt">"Reenviar Recibo"</string>
+<string name="MPUClose">"Cerrar"</string>
+<string name="MPUPaymentSuccessful">"Pago completado."</string>
+<string name="MPURefunded">"Reembolsado"</string>
+<string name="MPUDeclined">"Rechazado"</string>
+<string name="MPUAborted">"Abortado"</string>
+<string name="MPUPreauthorized">"Preautorizado"</string>
+<string name="MPUTotal">"Total"</string>
+<string name="MPUSale">"Pago"</string>
+<string name="MPUUnknown">"Desconocido"</string>
+<string name="MPURefundApproved">"Reembolso completado con éxito."</string>
+<string name="MPURefundDeclined">"Reembolso rechazado."</string>
+<string name="MPURefundAborted">"Reembolso cancelado."</string>
+<string name="MPURefundPayment">"Reembolsar pago"</string>
+<string name="MPUCapturePayment">"Capturar pago"</string>
+<string name="MPURefundPrompt">"¿Está seguro de que quiere reembolsar el pago?"</string>
+<string name="MPUCapturePrompt">"¿Está seguro de que desea capturar este pago?"</string>
+<string name="MPUTransactionTypeSale">"Venta"</string>
+<string name="MPUTransactionTypeRefund">"Reembolso"</string>
+<string name="MPUTransactionTypePreauthorization">"Preautorización"</string>
+<string name="MPURefund">"Reembolso"</string>
+<string name="MPUCapture">"Capturar"</string>
+<string name="MPUSummary">"Sumario"</string>
+<string name="MPUInvalidEmailAddress">"Correo electrónico inválido"</string>
+<string name="MPUEnterValidEmailAddress">"Por favor introduzca un correo electrónico válido."</string>
+<string name="MPUOK">"OK"</string>
+<string name="MPUCouldNotSendReceipt">"No se pudo enviar el recibo"</string>
+<string name="MPUPleaseTryAgain">"Por favor, inténtelo de nuevo"</string>
+<string name="MPUSelectAccount">"Selecione una cuenta"</string>
+<string name="MPUEnterEmailAddress">"Correo electrónico"</string>
+<string name="MPUSend">"Enviar"</string>
+<string name="MPUResend">"Reenviar"</string>
+<string name="MPUContinue">"Continuar"</string>
+<string name="MPUBackButtonDisabled">"El botón Atrás ha sido desactivado durante el proceso de pago. Por favor, utilice los botones de arriba."</string>
+<string name="MPUSignatureStatusLine">"Estoy de acuerdo en pagar la cantidad de %1$s."</string>
+<string name="MPUError">"Error"</string>
+<string name="MPUReceiptSent">"Recibo enviado."</string>
+<string name="MPUFetching">"Cargando transacción "</string>
+<string name="MPULoading">"Cargando..."</string>
+<string name="MPUVersion">"Versión"</string>
+<string name="MPULoggedInAs">"Email"</string>
+<string name="MPULogout">"Cerrar sesión"</string>
+<string name="MPUHelp">"Ayuda"</string>
+<string name="MPUForgot">"Sin acceso?"</string>
+<string name="MPULogin">"Iniciar Sesión"</string>
+<string name="MPUEmail">"Email"</string>
+<string name="MPUEmailAddress">"Correo electrónico"</string>
+<string name="MPUPassword">"Contraseña"</string>
+<string name="MPURequired">"obligatorio"</string>
+<string name="MPUWrongCredentials">"No existe ninguna cuenta con esa dirección de correo o ha introducido una contraseña errónea."</string>
+<string name="MPUUnknownUsername">"No existe ninguna cuenta con esa dirección de correo."</string>
+<string name="MPUBack">"Atrás"</string>
+<string name="MPUPasswordReset">"Le acabamos de enviar un correo electrónico con instrucciones sobre como dar los siguientes pasos."</string>
+<string name="MPURequestPassword">"Restablecer contraseña"</string>
+<string name="MPUActions">"Acciones"</string>
+<string name="MPUSettings">"Configuración"</string>
+<string name="MPUInfo">"Info"</string>
+<string name="MPUVisa">"Visa"</string>
+<string name="MPUMastercard">"Mastercard"</string>
+<string name="MPUMaestro">"Maestro"</string>
+<string name="MPUAmericanExpress">"American Express"</string>
+<string name="MPUReprint">"Volver a imprimir"</string>
+<string name="MPUPrinting">"Imprimiendo..."</string>
+<string name="MPUPrint">"Imprimir"</string>
+<string name="MPUPartiallyCaptured">"de la preautorización para %1$s"</string>
+</resources>

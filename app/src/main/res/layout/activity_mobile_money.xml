@@ -44,7 +44,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/telcosSpinner"
                     android:layout_below="@+id/providerLabel"
-                    android:layout_centerHorizontal="true" />
+                    android:layout_centerHorizontal="true"
+                    android:spinnerMode="dialog" />
 
                 <RelativeLayout
                     android:layout_below="@+id/telcosSpinner"
@@ -103,7 +104,7 @@
                     android:id="@+id/continueButton"
                     android:layout_width="match_parent"
                     android:layout_below="@+id/input_amount_edt"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:gravity="center"
                     android:layout_marginTop="20dp"
                     fbutton:cornerRadius="2dp"

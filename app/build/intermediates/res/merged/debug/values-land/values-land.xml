@@ -6,6 +6,7 @@
     <dimen name="abc_action_bar_progress_bar_size">32dp</dimen>
     <dimen name="abc_text_size_subtitle_material_toolbar">12dp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">14dp</dimen>
+    <dimen name="mpu_payment_status_icon_view_margin_top">30dp</dimen>
     <style name="Widget.Design.TabLayout" parent="Base.Widget.Design.TabLayout">
         <item name="tabGravity">center</item>
         <item name="tabMode">fixed</item>

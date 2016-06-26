@@ -1,12 +1,16 @@
 package com.hubtel.mpos.Activities;
 
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
@@ -17,7 +21,10 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.hubtel.mpos.Fragments.ListDialogFragment;
 import com.hubtel.mpos.Fragments.POSFRAGMENT;
+import com.hubtel.mpos.Fragments.POSFRAGMENT.POSFRAGMENTOnFragmentInteractionListener;
+import com.hubtel.mpos.Fragments.WalletFragment.OnFragmentInteractionListener;
 import com.hubtel.mpos.R;
 import com.hubtel.mpos.Utilities.Typefacer;
 import com.hubtel.mpos.Fragments.WalletFragment;
@@ -25,15 +32,32 @@ import com.hubtel.mpos.Utilities.Utility;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnMenuTabSelectedListener;
 
+import java.math.BigDecimal;
+import java.util.EnumSet;
+
+import io.mpos.Mpos;
+
+import io.mpos.accessories.AccessoryFamily;
+import io.mpos.accessories.parameters.AccessoryParameters;
+import io.mpos.provider.ProviderMode;
+import io.mpos.transactionprovider.processparameters.TransactionProcessParameters;
+import io.mpos.transactions.Currency;
+import io.mpos.transactions.parameters.TransactionParameters;
+import io.mpos.ui.shared.MposUi;
+import io.mpos.ui.shared.model.MposUiConfiguration;
 import it.neokree.materialtabs.MaterialTab;
 import it.neokree.materialtabs.MaterialTabHost;
 import it.neokree.materialtabs.MaterialTabListener;
 
+import static com.hubtel.mpos.Fragments.ListDialogFragment.*;
+
 public class MainActivity extends
         AppCompatActivity implements MaterialTabListener,
-        POSFRAGMENT.POSFRAGMENTOnFragmentInteractionListener,
-        WalletFragment.OnFragmentInteractionListener,
+        POSFRAGMENTOnFragmentInteractionListener,
+        OnFragmentInteractionListener,
+        ListDialogFragmentOnFragmentInteractionListener,
         View.OnClickListener {
+
     CoordinatorLayout coordinatorLayout;
     Toolbar toolbar;
     TextView toolbarTitle;
@@ -45,6 +69,10 @@ public class MainActivity extends
     MaterialTabHost tabHost;
     NestedScrollView nestedscroll;
     LayoutInflater inflater;
+
+
+    private final static String MERCHANT_ID="0b74f7bc-ddd3-4150-b4d4-f9fb32f18fe9";
+            private final static String MERCHANT_SECRET="QqAvgo6nVmwLc66feF2osg9ppilSNOWI";
      View view;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +92,12 @@ public class MainActivity extends
 
 
     }
-
+    void initMockPaymentController() {
+        MposUi mposUi = MposUi.initialize(MainActivity.this, ProviderMode.TEST,MERCHANT_ID,MERCHANT_SECRET);
+        AccessoryParameters mockAccessoryParameters = new AccessoryParameters.Builder(AccessoryFamily.MOCK).mocked().build();
+        mposUi.getConfiguration().setTerminalParameters(mockAccessoryParameters);
+        mposUi.getConfiguration().setSummaryFeatures(EnumSet.allOf(MposUiConfiguration.SummaryFeature.class));
+    }
     private void setViewHolder() {
 
         nestedscroll=(NestedScrollView)findViewById(R.id.myScrollingContent) ;
@@ -174,6 +207,21 @@ public class MainActivity extends
 
 
     }
+
+    void showDialog(DialogFragment dialogFragment, String tag) {
+
+
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        Fragment prev = getSupportFragmentManager().findFragmentByTag(tag);
+        if (prev != null) {
+            ft.remove(prev);
+        }
+        ft.addToBackStack(null);
+
+        dialogFragment.show(ft, tag);
+    }
+
+
     @Override
     public void onFragmentInteraction(Uri uri) {
 
@@ -185,7 +233,32 @@ public class MainActivity extends
     }
 
     @Override
-    public void POSFRAGMENTonFragmentInteraction(String uri) {
+    public void POSFRAGMENTonFragmentInteraction(String mode,String uri) {
+
+
+
+        switch (mode){
+
+            case "add2cart":
+
+                addItemsToCart(uri);
+
+                break;
+            case "checkout":
+
+                ListDialogFragment listDialog=new ListDialogFragment().newInstance(uri,"");
+                showDialog(listDialog,"checkout");
+
+
+                break;
+
+        }
+
+
+
+    }
+
+    private void addItemsToCart(String uri) {
 
         try{
             double val1; double amount;
@@ -215,12 +288,49 @@ public class MainActivity extends
 
         }catch (Exception e){
 
-         e.printStackTrace();
+            e.printStackTrace();
 
+        }
+    }
+
+    @Override
+    public void ListDialogFragmentonFragmentInteraction(String uri) {
+
+
+        try{
+
+
+            initMockPaymentController();
+            MposUi.getInitializedInstance().getConfiguration().getAppearance()
+                    .setColorPrimary(R.color.colorPrimary)
+                    .setColorPrimaryDark(R.color.colorPrimaryDark)
+                    .setBackgroundColor(Color.parseColor("#FFFFFF"))
+                    .setTextColorPrimary(Color.BLACK);
+            TransactionProcessParameters processParameters = new TransactionProcessParameters.Builder()
+                    .addAskForTipStep()
+                    .build();
+
+              String ur=Utility.prepareString4double(uri);
+            startPayment(Double.valueOf(ur), true, processParameters);
+
+        }catch (Exception e){
+
+
+
+            e.printStackTrace();
         }
 
     }
-
+    void startPayment(double amount, boolean autoCapture, TransactionProcessParameters processParameters) {
+        TransactionParameters params = new TransactionParameters.Builder()
+                .charge(BigDecimal.valueOf(amount), Currency.USD)
+                .subject("How much wood would a woodchuck chuck if a woodchuck could chuck wood?")
+                .customIdentifier("customId")
+                .autoCapture(autoCapture)
+                .build();
+        Intent intent = MposUi.getInitializedInstance().createTransactionIntent(params, processParameters);
+        startActivityForResult(intent, MposUi.REQUEST_CODE_PAYMENT);
+    }
     /**
      * class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();

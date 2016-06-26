@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="12dp"
+    android:layout_height="wrap_content"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    tools:context="com.hubtel.mpos.Fragments.ListDialogFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout">
+
+        p<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="GHS 20,0000"
+            android:id="@+id/titleView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical|right"
+        android:padding="10dp" />
+    </RelativeLayout>
+
+  <RelativeLayout
+      android:layout_below="@+id/relativeLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <info.hoang8f.widget.FButton
+
+
+          android:minHeight="@dimen/demo_button_min_height"
+          android:minWidth="@dimen/demo_button_min_width"
+          android:text="CASH"
+          android:textColor="@android:color/white"
+          fbutton:buttonColor="@color/colorPrimary"
+          android:id="@+id/checkOut"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:gravity="center"
+          android:textSize="15sp"
+          android:layout_margin="3dp"
+          fbutton:cornerRadius="1dp"
+          fbutton:shadowEnabled="false" />
+      <info.hoang8f.widget.FButton
+
+          android:layout_below="@+id/checkOut"
+          android:minHeight="@dimen/demo_button_min_height"
+          android:minWidth="@dimen/demo_button_min_width"
+          android:text="VISA"
+          android:textColor="@android:color/white"
+          fbutton:buttonColor="#E64A19"
+          android:id="@+id/checkOutA"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:gravity="center"
+          android:textSize="15sp"
+          android:layout_margin="3dp"
+          fbutton:cornerRadius="1dp"
+          fbutton:shadowEnabled="false" />
+      <info.hoang8f.widget.FButton
+
+          android:layout_below="@+id/checkOutA"
+          android:minHeight="@dimen/demo_button_min_height"
+          android:minWidth="@dimen/demo_button_min_width"
+          android:text="VISA DEBIT"
+          android:textColor="@android:color/white"
+          fbutton:buttonColor="#fff20300"
+          android:id="@+id/checkOutB"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:gravity="center"
+          android:textSize="15sp"
+          android:layout_margin="3dp"
+          fbutton:cornerRadius="1dp"
+          fbutton:shadowEnabled="false" />
+  </RelativeLayout>
+</RelativeLayout>

@@ -15,37 +15,37 @@ public final class R {
 		public static final int shadowHeight = 0x7f0100ce;
 	}
 	public static final class color {
-		public static final int fbutton_color_alizarin = 0x7f0c002c;
-		public static final int fbutton_color_amethyst = 0x7f0c002d;
-		public static final int fbutton_color_asbestos = 0x7f0c002e;
-		public static final int fbutton_color_belize_hole = 0x7f0c002f;
-		public static final int fbutton_color_carrot = 0x7f0c0030;
-		public static final int fbutton_color_clouds = 0x7f0c0031;
-		public static final int fbutton_color_concrete = 0x7f0c0032;
-		public static final int fbutton_color_emerald = 0x7f0c0033;
-		public static final int fbutton_color_green_sea = 0x7f0c0034;
-		public static final int fbutton_color_midnight_blue = 0x7f0c0035;
-		public static final int fbutton_color_nephritis = 0x7f0c0036;
-		public static final int fbutton_color_orange = 0x7f0c0037;
-		public static final int fbutton_color_peter_river = 0x7f0c0038;
-		public static final int fbutton_color_pomegranate = 0x7f0c0039;
-		public static final int fbutton_color_pumpkin = 0x7f0c003a;
-		public static final int fbutton_color_silver = 0x7f0c003b;
-		public static final int fbutton_color_sun_flower = 0x7f0c003c;
-		public static final int fbutton_color_transparent = 0x7f0c003d;
-		public static final int fbutton_color_turquoise = 0x7f0c003e;
-		public static final int fbutton_color_wet_asphalt = 0x7f0c003f;
-		public static final int fbutton_color_wisteria = 0x7f0c0040;
-		public static final int fbutton_default_color = 0x7f0c0041;
-		public static final int fbutton_default_shadow_color = 0x7f0c0042;
+		public static final int fbutton_color_alizarin = 0x7f0e002c;
+		public static final int fbutton_color_amethyst = 0x7f0e002d;
+		public static final int fbutton_color_asbestos = 0x7f0e002e;
+		public static final int fbutton_color_belize_hole = 0x7f0e002f;
+		public static final int fbutton_color_carrot = 0x7f0e0030;
+		public static final int fbutton_color_clouds = 0x7f0e0031;
+		public static final int fbutton_color_concrete = 0x7f0e0032;
+		public static final int fbutton_color_emerald = 0x7f0e0033;
+		public static final int fbutton_color_green_sea = 0x7f0e0034;
+		public static final int fbutton_color_midnight_blue = 0x7f0e0035;
+		public static final int fbutton_color_nephritis = 0x7f0e0036;
+		public static final int fbutton_color_orange = 0x7f0e0037;
+		public static final int fbutton_color_peter_river = 0x7f0e0038;
+		public static final int fbutton_color_pomegranate = 0x7f0e0039;
+		public static final int fbutton_color_pumpkin = 0x7f0e003a;
+		public static final int fbutton_color_silver = 0x7f0e003b;
+		public static final int fbutton_color_sun_flower = 0x7f0e003c;
+		public static final int fbutton_color_transparent = 0x7f0e003d;
+		public static final int fbutton_color_turquoise = 0x7f0e003e;
+		public static final int fbutton_color_wet_asphalt = 0x7f0e003f;
+		public static final int fbutton_color_wisteria = 0x7f0e0040;
+		public static final int fbutton_default_color = 0x7f0e0041;
+		public static final int fbutton_default_shadow_color = 0x7f0e0042;
 	}
 	public static final class dimen {
-		public static final int fbutton_default_conner_radius = 0x7f080069;
-		public static final int fbutton_default_padding_bottom = 0x7f08006a;
-		public static final int fbutton_default_padding_left = 0x7f08006b;
-		public static final int fbutton_default_padding_right = 0x7f08006c;
-		public static final int fbutton_default_padding_top = 0x7f08006d;
-		public static final int fbutton_default_shadow_height = 0x7f08006e;
+		public static final int fbutton_default_conner_radius = 0x7f09006a;
+		public static final int fbutton_default_padding_bottom = 0x7f09006b;
+		public static final int fbutton_default_padding_left = 0x7f09006c;
+		public static final int fbutton_default_padding_right = 0x7f09006d;
+		public static final int fbutton_default_padding_top = 0x7f09006e;
+		public static final int fbutton_default_shadow_height = 0x7f09006f;
 	}
 	public static final class styleable {
 		public static final int[] FButton = { 0x7f0100cb, 0x7f0100cc, 0x7f0100cd, 0x7f0100ce, 0x7f0100cf };

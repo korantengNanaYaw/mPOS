@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="mpu_payment_status_icon_view_margin_top">40dp</dimen>
 </resources>

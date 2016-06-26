@@ -12,15 +12,15 @@ public final class R {
 		public static final int av_color = 0x7f01001f;
 	}
 	public static final class id {
-		public static final int back = 0x7f0b0033;
-		public static final int close = 0x7f0b0034;
-		public static final int drawer = 0x7f0b0035;
-		public static final int plus = 0x7f0b0036;
+		public static final int back = 0x7f0c0034;
+		public static final int close = 0x7f0c0035;
+		public static final int drawer = 0x7f0c0036;
+		public static final int plus = 0x7f0c0037;
 	}
 	public static final class integer {
-		public static final int av_animationDuration = 0x7f0a0004;
-		public static final int rcv_animationDurationHide = 0x7f0a0007;
-		public static final int rcv_animationDurationReveal = 0x7f0a0008;
+		public static final int av_animationDuration = 0x7f0b0004;
+		public static final int rcv_animationDurationHide = 0x7f0b0007;
+		public static final int rcv_animationDurationReveal = 0x7f0b0008;
 	}
 	public static final class styleable {
 		public static final int[] ActionView = { 0x7f01001f, 0x7f010020 };

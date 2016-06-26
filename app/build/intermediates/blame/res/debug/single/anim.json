@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/mpu_fade_in.xml",
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/res/anim/mpu_fade_in.xml"
+    },
+    {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/anim/design_snackbar_in.xml"
     },
@@ -24,6 +28,10 @@
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_out_bottom.xml"
     },
     {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/mpu_fade_out.xml",
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/res/anim/mpu_fade_out.xml"
+    },
+    {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_out_top.xml"
     },
@@ -38,6 +46,10 @@
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/design_snackbar_out.xml",
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/anim/design_snackbar_out.xml"
+    },
+    {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/mpu_rotation.xml",
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/res/anim/mpu_rotation.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",

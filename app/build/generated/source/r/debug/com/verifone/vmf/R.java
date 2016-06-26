@@ -8,10 +8,10 @@ package com.verifone.vmf;
 
 public final class R {
 	public static final class string {
-		public static final int test = 0x7f06003b;
+		public static final int test = 0x7f07008b;
 	}
 	public static final class style {
-		public static final int AppBaseTheme = 0x7f09008d;
-		public static final int AppTheme = 0x7f09008e;
+		public static final int AppBaseTheme = 0x7f0a008e;
+		public static final int AppTheme = 0x7f0a008f;
 	}
 }
