@@ -103,15 +103,13 @@ public class MainActivity extends
         AccessoryParameters mockAccessoryParameters = new AccessoryParameters.Builder(AccessoryFamily.BBPOS_WISEPAD).bluetooth().build();
 
 
-
-
        /** AccessoryParameters parameters = new AccessoryParameters.Builder(AccessoryFamily.BBPOS_WISEPAD)
                 .bluetooth()
                 .build();
         ***/
 
         mposUi.getConfiguration().setTerminalParameters(mockAccessoryParameters);
-      //  mposUi.getConfiguration().setAccessoryFamily(AccessoryFamily.BBPOS_CHIPPER);
+       // mposUi.getConfiguration().setAccessoryFamily(AccessoryFamily.BBPOS_WISEPAD);
         mposUi.getConfiguration().setSummaryFeatures(EnumSet.allOf(MposUiConfiguration.SummaryFeature.class));
     }
     private void setViewHolder() {
@@ -311,18 +309,24 @@ public class MainActivity extends
 
 
             initMockPaymentController();
+
+
+            //
             MposUi.getInitializedInstance().getConfiguration().getAppearance()
                     .setColorPrimary(Color.parseColor("#3F51B5"))
                     .setColorPrimaryDark(Color.parseColor("#303F9F"))
                     .setBackgroundColor(Color.parseColor("#FFFFFF"))
                     .setTextColorPrimary(Color.WHITE);
+
+
+            //MIURA When i want to receive a TIP
             TransactionProcessParameters processParameters = new TransactionProcessParameters.Builder()
                     .addAskForTipStep()
                     .build();
 
             String trim=uri.replace("Ghs","");
             String ur=Utility.prepareString4double(trim);
-            startPayment(Double.valueOf(ur), true, processParameters);
+            startPayment(Double.valueOf(ur), true, null);
 
         }catch (Exception e){
 
@@ -333,14 +337,21 @@ public class MainActivity extends
 
     }
     void startPayment(double amount, boolean autoCapture, TransactionProcessParameters processParameters) {
+
+
         TransactionParameters params = new TransactionParameters.Builder()
-                .charge(BigDecimal.valueOf(amount), Currency.GHS)
+                .charge(BigDecimal.valueOf(amount),Currency.USD)
                 .subject("How much wood would a woodchuck chuck if a woodchuck could chuck wood?")
                 .customIdentifier("customId")
                 .autoCapture(autoCapture)
                 .build();
         Intent intent = MposUi.getInitializedInstance().createTransactionIntent(params, processParameters);
         startActivityForResult(intent, MposUi.RESULT_CODE_APPROVED);
+
+
+
+
+
     }
     /**
      * class ViewPagerAdapter extends FragmentPagerAdapter {

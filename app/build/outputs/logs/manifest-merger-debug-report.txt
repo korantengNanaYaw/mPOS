@@ -155,8 +155,8 @@ MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
+MERGED from [io.payworks:mpos.android.accessories.miura:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.miura/2.8.1/AndroidManifest.xml:7:5-9:41
 MERGED from [io.payworks:mpos.android.comlinks.bluetooth:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.bluetooth/2.8.1/AndroidManifest.xml:7:5-9:41
-MERGED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:7:5-9:41
 MERGED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:32:5-34:41
 MERGED from [io.payworks:mpos.android.core:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.core/2.8.1-BBPOS-BETA/AndroidManifest.xml:7:5-9:41
 MERGED from [io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.bbpos/2.8.1-BBPOS-BETA/AndroidManifest.xml:7:5-9:41
@@ -226,20 +226,6 @@ ADDED from [io.payworks:mpos.android.comlinks.bluetooth:2.8.1] /Users/apple/Down
 MERGED from [io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.bbpos/2.8.1-BBPOS-BETA/AndroidManifest.xml:12:5-74
 	android:name
 		ADDED from [io.payworks:mpos.android.comlinks.bluetooth:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.bluetooth/2.8.1/AndroidManifest.xml:12:22-71
-uses-permission#android.permission.RECORD_AUDIO
-ADDED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:11:5-71
-MERGED from [io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.bbpos/2.8.1-BBPOS-BETA/AndroidManifest.xml:13:5-71
-	android:name
-		ADDED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:11:22-68
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:12:5-81
-	android:name
-		ADDED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:12:22-78
-uses-permission#android.permission.INTERNET
-ADDED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:13:5-67
-MERGED from [io.payworks:mpos.android.core:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.core/2.8.1-BBPOS-BETA/AndroidManifest.xml:12:5-67
-	android:name
-		ADDED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:13:22-64
 activity#io.mpos.ui.paybutton.view.TransactionActivity
 ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:37:9-40:20
 	android:theme
@@ -278,6 +264,14 @@ ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/b
 		ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:60:13-49
 	android:name
 		ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:59:13-69
+uses-permission#android.permission.INTERNET
+ADDED from [io.payworks:mpos.android.core:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.core/2.8.1-BBPOS-BETA/AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from [io.payworks:mpos.android.core:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.core/2.8.1-BBPOS-BETA/AndroidManifest.xml:12:22-64
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from [io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.bbpos/2.8.1-BBPOS-BETA/AndroidManifest.xml:13:5-71
+	android:name
+		ADDED from [io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.bbpos/2.8.1-BBPOS-BETA/AndroidManifest.xml:13:22-68
 uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
 ADDED from [io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.bbpos/2.8.1-BBPOS-BETA/AndroidManifest.xml:14:5-80
 	android:name

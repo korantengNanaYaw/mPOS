@@ -4,27 +4,27 @@
     api-level="19"
     density="hdpi"
     format="7"
-    timestamp="48870159437529"
+    timestamp="68358280075548"
     token="-241061731195965776" >
 
     <task
         name="javac"
-        duration="909" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="214" />
+        duration="0" />
     <task
         name="verifier"
-        duration="25" />
+        duration="0" />
 
     <artifact
         location="/Users/apple/Downloads/MPOS/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="48870159437529" >
+    <build timestamp="68358280075548" >
         <artifact
             location="/Users/apple/Downloads/MPOS/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
