@@ -1,7 +1,6 @@
 package com.hubtel.mpos.Fragments;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -18,9 +17,6 @@ import com.hubtel.mpos.Utilities.Typefacer;
 import com.hubtel.mpos.Utilities.Utility;
 
 import java.text.DecimalFormat;
-
-import info.hoang8f.widget.FButton;
-
 
 
 /**
@@ -51,8 +47,8 @@ public class POSFRAGMENT extends Fragment implements View.OnClickListener {
     private static final String DIGITS = "0123456789.";
 
     EditText display;
-    FButton checkOut;
-    FButton buttonCart;
+    Button checkOut;
+    Button buttonCart;
     private  int counter;
     DecimalFormat df = new DecimalFormat("@###########");
 
@@ -132,20 +128,30 @@ public class POSFRAGMENT extends Fragment implements View.OnClickListener {
         forget.setOnClickListener(this);
         forget.setTypeface(typefacer.squareRegular());
 
-        checkOut=(FButton)v.findViewById(R.id.checkOut);
+        checkOut=(Button)v.findViewById(R.id.checkOut);
         checkOut.setTypeface(typefacer.squareLight());
         checkOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(smallscreen.getText().toString()!=null || !smallscreen.getText().toString().isEmpty()){
+                    String astring=  smallscreen.getText().toString();
+                    smallscreen.setText("");
+                    //mListener.POSFRAGMENTonFragmentInteraction("add2cart",astring);
 
-                mListener.POSFRAGMENTonFragmentInteraction("checkout", Utility.formatMoney(Double.parseDouble(smallscreen.getText().toString())));
+                    try{
+                        mListener.POSFRAGMENTonFragmentInteraction("checkout", Utility.formatMoney(Double.parseDouble(astring)));
+                    }catch (Exception e){e.printStackTrace();}
+
+
+                }
+
 
 
 
             }
         });
 
-        buttonCart=(FButton)v.findViewById(R.id.buttonCart);
+        buttonCart=(Button)v.findViewById(R.id.buttonCart);
         buttonCart.setTypeface(typefacer.squareLight());
         buttonCart.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -13,25 +13,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:weightSum="1">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/smallscreen"
+        android:layout_width="match_parent"
+        android:hint="GH₵ 0.0"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:textSize="40sp"
+
+        android:textColor="#fff20300"
+        android:paddingRight="50dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="right" />
 
 
-        <TextView
-            android:layout_margin="2dp"
-            android:id="@+id/smallscreen"
-            android:layout_width="match_parent"
-            android:hint="GH₵ 0.0"
-            android:layout_height="wrap_content"
-            android:maxLines="1"
-            android:layout_marginLeft="20dp"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="50sp"
 
-            android:textColor="#fff20300"
-            android:paddingRight="50dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
 
-            android:gravity="right" />
+</RelativeLayout>
+
+
 
 
     </LinearLayout>
@@ -192,51 +202,50 @@
 
     </LinearLayout>
     <LinearLayout
+        android:orientation="horizontal"
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight=".12" >
-        <info.hoang8f.widget.FButton
 
-            android:layout_gravity="left|top"
-            android:minHeight="@dimen/demo_button_min_height"
-            android:minWidth="@dimen/demo_button_min_width"
-            android:text="Check Out"
-            android:textColor="@android:color/white"
-            fbutton:buttonColor="#fff20300"
+
+
+        <Button
+            style="@style/keypadButton"
             android:id="@+id/checkOut"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight=".25"
-            android:gravity="center"
-            android:textSize="15sp"
-            android:layout_margin="3dp"
-            fbutton:cornerRadius="1dp"
-            fbutton:shadowEnabled="false" />
-        <info.hoang8f.widget.FButton
-            android:layout_gravity="left|top"
-            android:drawablePadding="-14dp"
-            android:text="Add To Cart"
-            android:textColor="@android:color/white"
-            fbutton:buttonColor="@color/colorPrimary"
-            android:id="@+id/buttonCart"
+            android:text="CheckOut"
+            android:textSize="16sp"
+            android:layout_margin="3dp" />
+
+        <Button
+            style="@style/keypadButton"
+            android:id="@+id/xigma"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight=".25"
-            android:gravity="center"
+            android:text="."
+            android:visibility="invisible"
+            android:gravity="center_horizontal"
+            android:textSize="40sp"
+            android:layout_margin="3dp" />
+        <Button
+            android:layout_weight=".25"
+
+            style="@style/keypadButton"
+            android:id="@+id/buttonCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:text="AddToCart"
             android:textSize="15sp"
-            fbutton:cornerRadius="1dp"
-            android:layout_margin="3dp"
-            fbutton:shadowEnabled="false" />
-
-
-
-
-
-
+            android:layout_margin="3dp" />
 
 
     </LinearLayout>
+
 
 
 </LinearLayout>

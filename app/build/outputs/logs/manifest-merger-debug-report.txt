@@ -46,9 +46,9 @@ MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [io.payworks:mpos.android.core:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.core/2.8.1/AndroidManifest.xml:14:5-15:19
 MERGED from [io.payworks:mpos.android.comlinks.bluetooth:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.bluetooth/2.8.1/AndroidManifest.xml:14:5-15:19
-MERGED from [io.payworks:mpos.android.accessories.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.verifone-e105/2.8.1/AndroidManifest.xml:14:5-15:19
+MERGED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:36:5-62:19
+MERGED from [io.payworks:mpos.android.core:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.core/2.8.1-BBPOS-BETA/AndroidManifest.xml:14:5-15:19
 MERGED from [com.verifone:verifone-pwmadk:3.0.2] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.verifone/verifone-pwmadk/3.0.2/AndroidManifest.xml:11:5-12:19
 MERGED from [com.github.markushi:android-ui:1.2] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.github.markushi/android-ui/1.2/AndroidManifest.xml:9:5-10:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
@@ -91,17 +91,6 @@ MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/
 MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:36:5-62:19
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:cardview-v7:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/AndroidManifest.xml:22:5-20
-MERGED from [io.payworks:mpos.android.core:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.core/2.8.1/AndroidManifest.xml:14:5-15:19
 	android:label
 		ADDED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml:11:9-41
 	android:supportsRtl
@@ -166,12 +155,11 @@ MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [io.payworks:mpos.android.core:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.core/2.8.1/AndroidManifest.xml:7:5-9:41
-MERGED from [io.payworks:mpos.android.accessories.miura:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.miura/2.8.1/AndroidManifest.xml:7:5-9:41
 MERGED from [io.payworks:mpos.android.comlinks.bluetooth:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.bluetooth/2.8.1/AndroidManifest.xml:7:5-9:41
-MERGED from [io.payworks:mpos.android.accessories.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.verifone-e105/2.8.1/AndroidManifest.xml:7:5-9:41
 MERGED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:7:5-9:41
-MERGED from [io.payworks:mpos.android.accessories.sewoo:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.sewoo/2.8.1/AndroidManifest.xml:7:5-9:41
+MERGED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:32:5-34:41
+MERGED from [io.payworks:mpos.android.core:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.core/2.8.1-BBPOS-BETA/AndroidManifest.xml:7:5-9:41
+MERGED from [io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.bbpos/2.8.1-BBPOS-BETA/AndroidManifest.xml:7:5-9:41
 MERGED from [com.verifone:verifone-pwmadk:3.0.2] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.verifone/verifone-pwmadk/3.0.2/AndroidManifest.xml:7:5-9:41
 MERGED from [it.neokree:MaterialTabs:0.11] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/it.neokree/MaterialTabs/0.11/AndroidManifest.xml:7:5-10:50
 MERGED from [com.github.markushi:android-ui:1.2] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.github.markushi/android-ui/1.2/AndroidManifest.xml:7:5-44
@@ -220,17 +208,6 @@ MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/
 MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:32:5-34:41
-MERGED from [com.android.support:appcompat-v7:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.4.0/AndroidManifest.xml:20:5-43
-MERGED from [io.payworks:mpos.android.core:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.core/2.8.1/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:23.4.0] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
@@ -239,67 +216,73 @@ MERGED from [io.payworks:mpos.android.core:2.8.1] /Users/apple/Downloads/MPOS/ap
 	android:minSdkVersion
 		INJECTED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/apple/Downloads/MPOS/app/src/main/AndroidManifest.xml
-uses-permission#android.permission.INTERNET
-ADDED from [io.payworks:mpos.android.core:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.core/2.8.1/AndroidManifest.xml:12:5-67
-MERGED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:13:5-67
-MERGED from [io.payworks:mpos.android.core:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.core/2.8.1/AndroidManifest.xml:12:5-67
-	android:name
-		ADDED from [io.payworks:mpos.android.core:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.core/2.8.1/AndroidManifest.xml:12:22-64
 uses-permission#android.permission.BLUETOOTH
 ADDED from [io.payworks:mpos.android.comlinks.bluetooth:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.bluetooth/2.8.1/AndroidManifest.xml:11:5-68
-MERGED from [io.payworks:mpos.android.accessories.sewoo:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.sewoo/2.8.1/AndroidManifest.xml:11:5-68
+MERGED from [io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.bbpos/2.8.1-BBPOS-BETA/AndroidManifest.xml:11:5-68
 	android:name
 		ADDED from [io.payworks:mpos.android.comlinks.bluetooth:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.bluetooth/2.8.1/AndroidManifest.xml:11:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
 ADDED from [io.payworks:mpos.android.comlinks.bluetooth:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.bluetooth/2.8.1/AndroidManifest.xml:12:5-74
-MERGED from [io.payworks:mpos.android.accessories.sewoo:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.sewoo/2.8.1/AndroidManifest.xml:12:5-74
+MERGED from [io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.bbpos/2.8.1-BBPOS-BETA/AndroidManifest.xml:12:5-74
 	android:name
 		ADDED from [io.payworks:mpos.android.comlinks.bluetooth:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.bluetooth/2.8.1/AndroidManifest.xml:12:22-71
 uses-permission#android.permission.RECORD_AUDIO
-ADDED from [io.payworks:mpos.android.accessories.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.verifone-e105/2.8.1/AndroidManifest.xml:11:5-71
-MERGED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:11:5-71
+ADDED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:11:5-71
+MERGED from [io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.bbpos/2.8.1-BBPOS-BETA/AndroidManifest.xml:13:5-71
 	android:name
-		ADDED from [io.payworks:mpos.android.accessories.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.verifone-e105/2.8.1/AndroidManifest.xml:11:22-68
+		ADDED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:11:22-68
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [io.payworks:mpos.android.accessories.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.verifone-e105/2.8.1/AndroidManifest.xml:12:5-81
-MERGED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:12:5-81
+ADDED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from [io.payworks:mpos.android.accessories.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.verifone-e105/2.8.1/AndroidManifest.xml:12:22-78
+		ADDED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:12:22-78
+uses-permission#android.permission.INTERNET
+ADDED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:13:5-67
+MERGED from [io.payworks:mpos.android.core:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.core/2.8.1-BBPOS-BETA/AndroidManifest.xml:12:5-67
+	android:name
+		ADDED from [io.payworks:mpos.android.comlinks.verifone-e105:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.comlinks.verifone-e105/2.8.1/AndroidManifest.xml:13:22-64
 activity#io.mpos.ui.paybutton.view.TransactionActivity
-ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:37:9-40:20
+ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:37:9-40:20
 	android:theme
-		ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:39:13-49
+		ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:39:13-49
 	android:name
-		ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:38:13-73
+		ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:38:13-73
 activity#io.mpos.ui.paybutton.view.SignatureActivity
-ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:41:9-45:20
+ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:41:9-45:20
 	android:screenOrientation
-		ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:43:13-56
+		ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:43:13-56
 	android:theme
-		ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:44:13-49
+		ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:44:13-49
 	android:name
-		ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:42:13-71
+		ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:42:13-71
 activity#io.mpos.ui.summarybutton.view.TransactionSummaryActivity
-ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:46:9-49:20
+ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:46:9-49:20
 	android:theme
-		ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:48:13-49
+		ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:48:13-49
 	android:name
-		ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:47:13-84
+		ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:47:13-84
 activity#io.mpos.ui.printbutton.view.PrintReceiptActivity
-ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:50:9-53:20
+ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:50:9-53:20
 	android:theme
-		ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:52:13-49
+		ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:52:13-49
 	android:name
-		ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:51:13-76
+		ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:51:13-76
 activity#io.mpos.ui.acquirer.view.LoginActivity
-ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:54:9-57:20
+ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:54:9-57:20
 	android:theme
-		ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:56:13-49
+		ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:56:13-49
 	android:name
-		ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:55:13-66
+		ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:55:13-66
 activity#io.mpos.ui.acquirer.view.SettingsActivity
-ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:58:9-61:20
+ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:58:9-61:20
 	android:theme
-		ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:60:13-49
+		ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:60:13-49
 	android:name
-		ADDED from [MPOS:mpos-ui:unspecified] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/AndroidManifest.xml:59:13-69
+		ADDED from [io.payworks:mpos.android.ui:2.8.1] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/AndroidManifest.xml:59:13-69
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from [io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.bbpos/2.8.1-BBPOS-BETA/AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from [io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.bbpos/2.8.1-BBPOS-BETA/AndroidManifest.xml:14:22-77
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.bbpos/2.8.1-BBPOS-BETA/AndroidManifest.xml:15:5-81
+	android:name
+		ADDED from [io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA] /Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.accessories.bbpos/2.8.1-BBPOS-BETA/AndroidManifest.xml:15:22-78

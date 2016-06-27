@@ -77,7 +77,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/mpu_ic_help_outline_white_24dp.png",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/MPOS/mpos-ui/unspecified/res/drawable-xxxhdpi-v4/mpu_ic_help_outline_white_24dp.png"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/drawable-xxxhdpi-v4/mpu_ic_help_outline_white_24dp.png"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/right_arrow.png",

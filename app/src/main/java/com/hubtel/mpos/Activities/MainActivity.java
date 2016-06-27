@@ -37,6 +37,8 @@ import java.util.EnumSet;
 
 import io.mpos.Mpos;
 
+
+import io.mpos.accessories.bbpos.*;
 import io.mpos.accessories.AccessoryFamily;
 import io.mpos.accessories.parameters.AccessoryParameters;
 import io.mpos.provider.ProviderMode;
@@ -93,9 +95,23 @@ public class MainActivity extends
 
     }
     void initMockPaymentController() {
+
+
         MposUi mposUi = MposUi.initialize(MainActivity.this, ProviderMode.TEST,MERCHANT_ID,MERCHANT_SECRET);
-        AccessoryParameters mockAccessoryParameters = new AccessoryParameters.Builder(AccessoryFamily.MOCK).mocked().build();
+       // AccessoryParameters mockAccessoryParameters = new AccessoryParameters.Builder(AccessoryFamily.BBPOS_WISE).bluetooth().build();
+
+        AccessoryParameters mockAccessoryParameters = new AccessoryParameters.Builder(AccessoryFamily.BBPOS_WISEPAD).bluetooth().build();
+
+
+
+
+       /** AccessoryParameters parameters = new AccessoryParameters.Builder(AccessoryFamily.BBPOS_WISEPAD)
+                .bluetooth()
+                .build();
+        ***/
+
         mposUi.getConfiguration().setTerminalParameters(mockAccessoryParameters);
+      //  mposUi.getConfiguration().setAccessoryFamily(AccessoryFamily.BBPOS_CHIPPER);
         mposUi.getConfiguration().setSummaryFeatures(EnumSet.allOf(MposUiConfiguration.SummaryFeature.class));
     }
     private void setViewHolder() {
@@ -131,13 +147,7 @@ public class MainActivity extends
 
         }
     }
-  /**  void startAnim(){
-        findViewById(R.id.avloadingIndicatorView).setVisibility(View.VISIBLE);
-    }
 
-    void stopAnim(){
-        findViewById(R.id.avloadingIndicatorView).setVisibility(View.GONE);
-    }**/
     private void inflateLayout(){
 
       //  View view;
@@ -302,15 +312,16 @@ public class MainActivity extends
 
             initMockPaymentController();
             MposUi.getInitializedInstance().getConfiguration().getAppearance()
-                    .setColorPrimary(R.color.colorPrimary)
-                    .setColorPrimaryDark(R.color.colorPrimaryDark)
+                    .setColorPrimary(Color.parseColor("#3F51B5"))
+                    .setColorPrimaryDark(Color.parseColor("#303F9F"))
                     .setBackgroundColor(Color.parseColor("#FFFFFF"))
-                    .setTextColorPrimary(Color.BLACK);
+                    .setTextColorPrimary(Color.WHITE);
             TransactionProcessParameters processParameters = new TransactionProcessParameters.Builder()
                     .addAskForTipStep()
                     .build();
 
-              String ur=Utility.prepareString4double(uri);
+            String trim=uri.replace("Ghs","");
+            String ur=Utility.prepareString4double(trim);
             startPayment(Double.valueOf(ur), true, processParameters);
 
         }catch (Exception e){
@@ -323,13 +334,13 @@ public class MainActivity extends
     }
     void startPayment(double amount, boolean autoCapture, TransactionProcessParameters processParameters) {
         TransactionParameters params = new TransactionParameters.Builder()
-                .charge(BigDecimal.valueOf(amount), Currency.USD)
+                .charge(BigDecimal.valueOf(amount), Currency.GHS)
                 .subject("How much wood would a woodchuck chuck if a woodchuck could chuck wood?")
                 .customIdentifier("customId")
                 .autoCapture(autoCapture)
                 .build();
         Intent intent = MposUi.getInitializedInstance().createTransactionIntent(params, processParameters);
-        startActivityForResult(intent, MposUi.REQUEST_CODE_PAYMENT);
+        startActivityForResult(intent, MposUi.RESULT_CODE_APPROVED);
     }
     /**
      * class ViewPagerAdapter extends FragmentPagerAdapter {

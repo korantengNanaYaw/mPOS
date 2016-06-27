@@ -1,6 +1,5 @@
 {
-    "trust_root.bks": "15d8ab967c3822f13e5c7f806ca305b7428735228f176c6f11367602b4a31f3d",
-    "generic/currencies.json": "ed4f318dd33912a8c73dd2b5ff06adc98033ab5d6e9dcadb23739cfa68a5c28a",
+    "generic/currencies.json": "04a9e2f5c1824013f228410ffc8a7877850c8a6ab060cbadf4bfc5a5938169ab",
     "generic/schemes.json": "d8eb350ad08e544fb09f2d61558574f2bdb415d15b0567af3f24d448cb2c8941",
     "i18n/displays/20x4/prompts-20x4-de_DE.json": "70b3f04798204f4c2dd54000ea580bf25bccc4df1cf6165418140dcda1bff104",
     "i18n/displays/20x4/prompts-20x4-en_US.json": "74f86c6a2e47e42effe6dcc6d27d5f1d76db988d79428c3bbad33d870699b62c",
@@ -55,5 +54,6 @@
     "i18n/receipts/receipt-it_IT.json": "95219f65b74d32e33400d888eaa47ae66cbd71b22fad9b38fa6c077ab767df56",
     "i18n/receipts/receipt-nl_BE.json": "ee0e318e66e80f3c754aacd984aaba764757b67e1424b23b4c28f1f6b18ba962",
     "i18n/receipts/receipt-pl_PL.json": "3af8e6961da3f60e78ab03f39c6b31a705b7c236cb43ca7c4d560840f6844600",
-    "i18n/receipts/receipt-pt_PT.json": "8dadd2f574a0b86796e3a27c80ec07c8cfc4bde6e1f5a5b80af0d1f9db40d919"
+    "i18n/receipts/receipt-pt_PT.json": "8dadd2f574a0b86796e3a27c80ec07c8cfc4bde6e1f5a5b80af0d1f9db40d919",
+    "trust_root.bks": "8bf175a2fe70b43f3bc1c1796592e8cc9172470964cb5065ae50aaf9a9cfe703"
 }

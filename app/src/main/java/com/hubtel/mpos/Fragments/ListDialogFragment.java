@@ -63,12 +63,12 @@ public class ListDialogFragment extends DialogFragment {
         super.onViewCreated(view, savedInstanceState);
 
         titleView=(TextView)view.findViewById(R.id.titleView);
-        titleView.setTypeface(typefacer.squareLight());
-        titleView.setText("Charge :  "+mParam1);
+        titleView.setTypeface(typefacer.squareBold());
+        titleView.setText("Charge : "+mParam1);
 
 
 
-        checkOut1=(FButton)view.findViewById(R.id.checkOut);
+        checkOut1=(FButton)view.findViewById(R.id.checkOutA);
         checkOut1.setTypeface(typefacer.squareLight());
         checkOut1.setOnClickListener(new View.OnClickListener() {
             @Override
