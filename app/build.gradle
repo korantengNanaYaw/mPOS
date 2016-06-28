@@ -60,10 +60,16 @@ dependencies {
    //compile 'io.payworks:mpos.android.accessories.sewoo:2.8.1@aar'
 
 
-    compile 'io.payworks:mpos.android.ui:2.8.1@aar'
-    compile 'io.payworks:mpos.android.core:2.8.1-BBPOS-BETA:@aar'
-    compile 'io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA:@aar'
+   // compile 'io.payworks:mpos.android.ui:2.8.1@aar'
+    //compile 'io.payworks:mpos.android.core:2.8.1-BBPOS-BETA:@aar'
+    //compile 'io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA:@aar'
 
+
+
+
+    compile 'io.payworks:mpos.android.ui:2.8.1-BBPOS-BETA@aar'
+    compile 'io.payworks:mpos.android.core:2.8.1-BBPOS-BETA@aar'
+    compile 'io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA@aar'
 
 
     compile 'com.verifone:verifone-pwmadk:3.0.2@aar'

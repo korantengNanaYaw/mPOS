@@ -340,7 +340,7 @@ public class MainActivity extends
 
 
         TransactionParameters params = new TransactionParameters.Builder()
-                .charge(BigDecimal.valueOf(amount),Currency.USD)
+                .charge(BigDecimal.valueOf(amount),Currency.GHS)
                 .subject("How much wood would a woodchuck chuck if a woodchuck could chuck wood?")
                 .customIdentifier("customId")
                 .autoCapture(autoCapture)
