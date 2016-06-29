@@ -68,14 +68,6 @@
         "name": "Pound sterling",
         "symbol": "\u00a3"
     },
-    "GHS": {
-        "exponent": 2,
-        "isPrefix": true,
-        "isoNumber": 936,
-        "name": "Ghanaian Cedi",
-        "symbol": "GHS",
-        "symbolDelimiter": " "
-    },
     "HKD": {
         "exponent": 2,
         "isPrefix": true,

@@ -41,15 +41,15 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable/mpu_payment_button_textcolor.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1-BBPOS-BETA/res/drawable/mpu_payment_button_textcolor.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/drawable/mpu_payment_button_textcolor.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable/mpu_transaction_progress_drawable.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1-BBPOS-BETA/res/drawable/mpu_transaction_progress_drawable.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/drawable/mpu_transaction_progress_drawable.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable/mpu_payment_button.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1-BBPOS-BETA/res/drawable/mpu_payment_button.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/drawable/mpu_payment_button.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_full_material.xml",

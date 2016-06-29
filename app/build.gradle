@@ -49,7 +49,10 @@ dependencies {
     compile 'com.android.support:support-annotations:23.4.0'
     compile 'com.android.support:design:23.4.0'
 
-    //compile 'io.payworks:mpos.android.core:2.8.1@aar'
+
+
+    compile 'io.payworks:mpos.android.ui:2.8.1@aar'
+    compile 'io.payworks:mpos.android.core:2.8.1@aar'
     compile 'io.payworks:mpos.android.accessories.miura:2.8.1@aar'
     compile 'io.payworks:mpos.android.comlinks.bluetooth:2.8.1@aar'
 
@@ -60,16 +63,16 @@ dependencies {
    //compile 'io.payworks:mpos.android.accessories.sewoo:2.8.1@aar'
 
 
-   // compile 'io.payworks:mpos.android.ui:2.8.1@aar'
-    //compile 'io.payworks:mpos.android.core:2.8.1-BBPOS-BETA:@aar'
+
+
     //compile 'io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA:@aar'
 
 
 
 
-    compile 'io.payworks:mpos.android.ui:2.8.1-BBPOS-BETA@aar'
-    compile 'io.payworks:mpos.android.core:2.8.1-BBPOS-BETA@aar'
-    compile 'io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA@aar'
+   // compile 'io.payworks:mpos.android.ui:2.8.1-BBPOS-BETA@aar'
+    //compile 'io.payworks:mpos.android.core:2.8.1-BBPOS-BETA@aar'
+    //compile 'io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA@aar'
 
 
     compile 'com.verifone:verifone-pwmadk:3.0.2@aar'

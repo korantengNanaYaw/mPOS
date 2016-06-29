@@ -7,8 +7,8 @@
     android:background="@color/colorPrimary"
     app:theme="@style/appBarTheme"
     app:layout_scrollFlags="scroll|enterAlways"
-    app:popupTheme="@style/Theme.AppCompat"
-    android:weightSum="1">
+    android:fitsSystemWindows="true"
+    app:popupTheme="@style/Theme.AppCompat">
 
     <RelativeLayout
         android:layout_width="match_parent"

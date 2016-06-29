@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
+    abi="armeabi-v7a,armeabi"
     api-level="23"
-    density="xhdpi"
+    density="xxhdpi"
     format="7"
-    timestamp="88214931725180"
+    timestamp="123620403750167"
     token="-241061731195965776" >
 
     <task
         name="javac"
-        duration="915" />
+        duration="694" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="681" />
+        duration="145" />
     <task
         name="verifier"
-        duration="195" />
+        duration="28" />
 
     <artifact
         location="/Users/apple/Downloads/MPOS/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="88214931725180" >
+    <build timestamp="123620403750167" >
         <artifact
             location="/Users/apple/Downloads/MPOS/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />

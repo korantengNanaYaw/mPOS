@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
     tools:context=".Activities.MainActivity">
 
     <include  android:id="@+id/app_bar"
@@ -14,7 +14,7 @@
 
 
 
-    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <android.support.design.widget.CoordinatorLayout
         android:id="@+id/coordinate"
         android:layout_below="@+id/app_bar"
         android:layout_width="match_parent"

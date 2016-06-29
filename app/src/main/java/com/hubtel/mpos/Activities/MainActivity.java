@@ -16,6 +16,7 @@ import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -33,18 +34,28 @@ import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnMenuTabSelectedListener;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
 import java.util.EnumSet;
+import java.util.List;
 
 import io.mpos.Mpos;
 
 
-import io.mpos.accessories.bbpos.*;
+
 import io.mpos.accessories.AccessoryFamily;
 import io.mpos.accessories.parameters.AccessoryParameters;
+import io.mpos.paymentdetails.ApplicationInformation;
 import io.mpos.provider.ProviderMode;
+import io.mpos.transactionprovider.TransactionProcess;
+import io.mpos.transactionprovider.TransactionProcessDetails;
+import io.mpos.transactionprovider.TransactionProcessDetailsState;
+import io.mpos.transactionprovider.TransactionProcessWithRegistrationListener;
+import io.mpos.transactionprovider.TransactionProvider;
 import io.mpos.transactionprovider.processparameters.TransactionProcessParameters;
 import io.mpos.transactions.Currency;
+import io.mpos.transactions.Transaction;
 import io.mpos.transactions.parameters.TransactionParameters;
+import io.mpos.transactions.receipts.Receipt;
 import io.mpos.ui.shared.MposUi;
 import io.mpos.ui.shared.model.MposUiConfiguration;
 import it.neokree.materialtabs.MaterialTab;
@@ -100,7 +111,7 @@ public class MainActivity extends
         MposUi mposUi = MposUi.initialize(MainActivity.this, ProviderMode.TEST,MERCHANT_ID,MERCHANT_SECRET);
        // AccessoryParameters mockAccessoryParameters = new AccessoryParameters.Builder(AccessoryFamily.BBPOS_WISE).bluetooth().build();
 
-        AccessoryParameters mockAccessoryParameters = new AccessoryParameters.Builder(AccessoryFamily.BBPOS_WISEPAD).bluetooth().build();
+        AccessoryParameters mockAccessoryParameters = new AccessoryParameters.Builder(AccessoryFamily.MIURA_MPI).bluetooth().build();
 
 
        /** AccessoryParameters parameters = new AccessoryParameters.Builder(AccessoryFamily.BBPOS_WISEPAD)
@@ -308,7 +319,7 @@ public class MainActivity extends
         try{
 
 
-            initMockPaymentController();
+       /**     initMockPaymentController();
 
 
             //
@@ -326,7 +337,8 @@ public class MainActivity extends
 
             String trim=uri.replace("Ghs","");
             String ur=Utility.prepareString4double(trim);
-            startPayment(Double.valueOf(ur), true, null);
+            startPayment(Double.valueOf(ur), true, null);**/
+            hitTransaction();
 
         }catch (Exception e){
 
@@ -336,17 +348,112 @@ public class MainActivity extends
         }
 
     }
+
+
+
+
+    void hitTransaction(){
+
+        final TransactionProvider transactionProvider = Mpos.createTransactionProvider(this,
+                ProviderMode.TEST,
+                MERCHANT_ID,
+                MERCHANT_SECRET);
+
+
+// When using the Bluetooth Miura Shuttle / M007 / M010, use the following parameters:
+    AccessoryParameters accessoryParameters = new AccessoryParameters.Builder(AccessoryFamily.MIURA_MPI)
+                                                                     .bluetooth()
+                                                                     .build();
+
+
+        TransactionParameters transactionParameters = new TransactionParameters.Builder()
+                .charge(new BigDecimal("5.00"), io.mpos.transactions.Currency.EUR)
+                .subject("Bouquet of Flowers")
+                .customIdentifier("yourReferenceForTheTransaction")
+                .build();
+
+
+
+
+        TransactionProcess paymentProcess = transactionProvider.startTransaction(transactionParameters, accessoryParameters,
+                new TransactionProcessWithRegistrationListener() {
+                    @Override
+                    public void onCompleted(TransactionProcess transactionProcess, Transaction transaction, TransactionProcessDetails transactionProcessDetails) {
+                        Log.d("mpos", "completed");
+
+                        if (transactionProcessDetails.getState() == TransactionProcessDetailsState.APPROVED) {
+                            // print the merchant receipt
+                            Receipt merchantReceipt = transaction.getMerchantReceipt();
+
+                            // print a signature line if required
+                            if(merchantReceipt.isSignatureLineRequired()) {
+                                System.out.println("");
+                                System.out.println("");
+                                System.out.println("");
+                                System.out.println("------ PLEASE SIGN HERE ------");
+                            }
+
+                            // ask the merchant, whether the shopper wants to have a receipt
+                            Receipt customerReceipt = transaction.getCustomerReceipt();
+
+                            // and close the checkout UI
+                        } else {
+                            // Allow your merchant to try another transaction
+                        }
+                    }
+
+                    @Override
+                    public void onStatusChanged(TransactionProcess transactionProcess, Transaction transaction, TransactionProcessDetails transactionProcessDetails) {
+                        Log.d("mpos", "status changed: " + Arrays.toString(transactionProcessDetails.getInformation()));
+
+                    }
+
+                    @Override
+                    public void onCustomerSignatureRequired(TransactionProcess transactionProcess, Transaction transaction) {
+
+                    }
+
+                    @Override
+                    public void onCustomerVerificationRequired(TransactionProcess transactionProcess, Transaction transaction) {
+                       // always return false here
+                        transactionProcess.continueWithCustomerIdentityVerified(false);
+                    }
+
+                    @Override
+                    public void onApplicationSelectionRequired(TransactionProcess transactionProcess, Transaction transaction, List<ApplicationInformation> list) {
+
+                    }
+
+                    @Override
+                    public void onRegistered(TransactionProcess transactionProcess, Transaction transaction) {
+                        Log.d("mpos", "transaction identifier is: " + transaction.getIdentifier() + ". Store it in your backend so that you can always query its status.");
+                    }
+                });
+
+    }
+
+
+
+
     void startPayment(double amount, boolean autoCapture, TransactionProcessParameters processParameters) {
 
 
-        TransactionParameters params = new TransactionParameters.Builder()
-                .charge(BigDecimal.valueOf(amount),Currency.GHS)
-                .subject("How much wood would a woodchuck chuck if a woodchuck could chuck wood?")
-                .customIdentifier("customId")
-                .autoCapture(autoCapture)
-                .build();
-        Intent intent = MposUi.getInitializedInstance().createTransactionIntent(params, processParameters);
-        startActivityForResult(intent, MposUi.RESULT_CODE_APPROVED);
+        try{
+
+            TransactionParameters params = new TransactionParameters.Builder()
+                    .charge(BigDecimal.valueOf(amount),Currency.USD)
+                    .subject("How much wood would a woodchuck chuck if a woodchuck could chuck wood?")
+                    .customIdentifier("customId")
+                    .autoCapture(autoCapture)
+                    .build();
+            Intent intent = MposUi.getInitializedInstance().createTransactionIntent(params, processParameters);
+            startActivityForResult(intent, MposUi.RESULT_CODE_APPROVED);
+        }catch (Exception e){
+
+            e.printStackTrace();
+        }
+
+
 
 
 
