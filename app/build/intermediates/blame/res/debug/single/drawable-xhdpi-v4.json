@@ -248,6 +248,14 @@
         "source": "/Users/apple/Downloads/MPOS/app/src/main/res/drawable-xhdpi/ic_payment.png"
     },
     {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_add_note.png",
+        "source": "/Users/apple/Downloads/MPOS/app/src/main/res/drawable-xhdpi/ic_add_note.png"
+    },
+    {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/md_nav_back.png",
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.4/res/drawable-xhdpi-v4/md_nav_back.png"
+    },
+    {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/mpu_diners_image.png",
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/drawable-xhdpi-v4/mpu_diners_image.png"
     },

@@ -16,9 +16,9 @@ allprojects {
     repositories {
         jcenter()
 
-        maven {
-            url "http://releases.payworks.io/artifactory/mpos"
-        }
+        maven { url "http://releases.payworks.io/artifactory/mpos" }
+
+        maven { url "https://jitpack.io" }
     }
 }
 

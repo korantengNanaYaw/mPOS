@@ -8,6 +8,18 @@
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-v21/abc_btn_colored_material.xml"
     },
     {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-v21/md_btn_shape.xml",
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.4/res/drawable-v21/md_btn_shape.xml"
+    },
+    {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-v21/md_btn_selector_ripple.xml",
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.4/res/drawable-v21/md_btn_selector_ripple.xml"
+    },
+    {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-v21/md_btn_selector_ripple_dark.xml",
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.4/res/drawable-v21/md_btn_selector_ripple_dark.xml"
+    },
+    {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-v21/abc_edit_text_material.xml"
     }

@@ -96,6 +96,10 @@
         "source": "/Users/apple/Downloads/MPOS/app/src/main/res/drawable-xxxhdpi/ic_mtn.png"
     },
     {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/ic_add_note.png",
+        "source": "/Users/apple/Downloads/MPOS/app/src/main/res/drawable-xxxhdpi/ic_add_note.png"
+    },
+    {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-xxxhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
@@ -104,12 +108,16 @@
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-xxxhdpi-v4/abc_ic_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/md_nav_back.png",
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.4/res/drawable-xxxhdpi-v4/md_nav_back.png"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png",
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4/left_arrow.png",

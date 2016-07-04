@@ -4,6 +4,8 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.text.InputType;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,12 +13,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.afollestad.materialdialogs.MaterialDialog;
+import com.hubtel.mpos.Models.CartItems;
 import com.hubtel.mpos.Utilities.CalculatorBrain;
 import com.hubtel.mpos.R;
 import com.hubtel.mpos.Utilities.Typefacer;
 import com.hubtel.mpos.Utilities.Utility;
 
 import java.text.DecimalFormat;
+
+import me.grantland.widget.AutofitTextView;
 
 
 /**
@@ -41,7 +47,7 @@ public class POSFRAGMENT extends Fragment implements View.OnClickListener {
     Typefacer typefacer;
 
     String currency="GH₵";
-    TextView smallscreen;
+    AutofitTextView smallscreen,addnote;
     private Boolean userIsInTheMiddleOfTypingANumber = false;
     private CalculatorBrain mCalculatorBrain;
     private static final String DIGITS = "0123456789.";
@@ -58,8 +64,41 @@ public class POSFRAGMENT extends Fragment implements View.OnClickListener {
     }
     private void padLabels(View v){
 
-         smallscreen=(TextView)v.findViewById(R.id.smallscreen) ;
+         smallscreen=(AutofitTextView)v.findViewById(R.id.smallscreen) ;
         smallscreen.setTypeface(typefacer.getRoboRealThin());
+
+
+        addnote=(AutofitTextView)v.findViewById(R.id.addnote) ;
+        addnote.setTypeface(typefacer.squareLight());
+        addnote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+             new MaterialDialog.Builder(getActivity())
+                        .title("Add Note")
+                        .inputType(InputType.TYPE_CLASS_TEXT )
+                        .input(null,null, new MaterialDialog.InputCallback() {
+                            @Override
+                            public void onInput(MaterialDialog dialog, CharSequence input) {
+                              if( input.length()==0 ){
+
+                                 // addnote.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
+                                 // addnote.setText("");
+                                  addnote.setHint("Add Note");
+                              }else{
+
+                                  Log.d("mpos","input length = "+input.length());
+                                  //addnote.setD
+
+                                  //addnote=(AutofitTeddxtView)v.findViewById(R.id.addnote) ;
+
+                                  addnote.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_add_note, 0, 0, 0);
+                                  addnote.setText(input.toString());
+
+                              }
+                            }
+                        }).show();
+            }
+        });
 
         Button buttonC=(Button)v.findViewById(R.id.buttonC);
         buttonC.setOnClickListener(this);
@@ -156,8 +195,25 @@ public class POSFRAGMENT extends Fragment implements View.OnClickListener {
         buttonCart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            mListener.POSFRAGMENTonFragmentInteraction("add2cart",smallscreen.getText().toString());
+
+         String addNoteTxt="";
+                String smallScreenValue=smallscreen.getText().toString();
+                CartItems cartItems=new CartItems();
+                cartItems.setItemName(addNoteTxt);
+                cartItems.setItemPrice(smallScreenValue);
+                cartItems.setItemQty("0");
+
+                mListener.addItemsToCart(cartItems);
+
+
+            //mListener.POSFRAGMENTonFragmentInteraction("add2cart",smallscreen.getText().toString());
                 smallscreen.setText("");
+                addnote.setText("");
+                addnote.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
+                addnote.setHint("Add Note");
+
+
+
             }
         });
 
@@ -284,5 +340,8 @@ public class POSFRAGMENT extends Fragment implements View.OnClickListener {
     public interface POSFRAGMENTOnFragmentInteractionListener {
         // TODO: Update argument type and name
         void POSFRAGMENTonFragmentInteraction(String mode,String uri);
+
+
+        void addItemsToCart(CartItems cartItems);
     }
 }

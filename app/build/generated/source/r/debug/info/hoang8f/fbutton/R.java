@@ -8,11 +8,11 @@ package info.hoang8f.fbutton;
 
 public final class R {
 	public static final class attr {
-		public static final int buttonColor = 0x7f0100cc;
-		public static final int cornerRadius = 0x7f0100cf;
-		public static final int shadowColor = 0x7f0100cd;
-		public static final int shadowEnabled = 0x7f0100cb;
-		public static final int shadowHeight = 0x7f0100ce;
+		public static final int buttonColor = 0x7f0100eb;
+		public static final int cornerRadius = 0x7f0100ee;
+		public static final int shadowColor = 0x7f0100ec;
+		public static final int shadowEnabled = 0x7f0100ea;
+		public static final int shadowHeight = 0x7f0100ed;
 	}
 	public static final class color {
 		public static final int fbutton_color_alizarin = 0x7f0e002c;
@@ -40,15 +40,15 @@ public final class R {
 		public static final int fbutton_default_shadow_color = 0x7f0e0042;
 	}
 	public static final class dimen {
-		public static final int fbutton_default_conner_radius = 0x7f09006a;
-		public static final int fbutton_default_padding_bottom = 0x7f09006b;
-		public static final int fbutton_default_padding_left = 0x7f09006c;
-		public static final int fbutton_default_padding_right = 0x7f09006d;
-		public static final int fbutton_default_padding_top = 0x7f09006e;
-		public static final int fbutton_default_shadow_height = 0x7f09006f;
+		public static final int fbutton_default_conner_radius = 0x7f09006b;
+		public static final int fbutton_default_padding_bottom = 0x7f09006c;
+		public static final int fbutton_default_padding_left = 0x7f09006d;
+		public static final int fbutton_default_padding_right = 0x7f09006e;
+		public static final int fbutton_default_padding_top = 0x7f09006f;
+		public static final int fbutton_default_shadow_height = 0x7f090070;
 	}
 	public static final class styleable {
-		public static final int[] FButton = { 0x7f0100cb, 0x7f0100cc, 0x7f0100cd, 0x7f0100ce, 0x7f0100cf };
+		public static final int[] FButton = { 0x7f0100ea, 0x7f0100eb, 0x7f0100ec, 0x7f0100ed, 0x7f0100ee };
 		public static final int FButton_buttonColor = 1;
 		public static final int FButton_cornerRadius = 4;
 		public static final int FButton_shadowColor = 2;

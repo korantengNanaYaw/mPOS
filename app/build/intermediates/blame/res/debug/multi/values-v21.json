@@ -1580,9 +1580,51 @@
                     "startLine": 210,
                     "startColumn": 4,
                     "startOffset": 15836,
-                    "endLine": 211,
+                    "endLine": 220,
                     "endColumn": 12,
-                    "endOffset": 15908
+                    "endOffset": 16590
+                },
+                "from": {
+                    "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.4/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 809
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 221,
+                    "startColumn": 4,
+                    "startOffset": 16595,
+                    "endLine": 231,
+                    "endColumn": 12,
+                    "endOffset": 17341
+                },
+                "from": {
+                    "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.4/res/values-v21/values-v21.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 814,
+                        "endLine": 23,
+                        "endColumn": 12,
+                        "endOffset": 1560
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 232,
+                    "startColumn": 4,
+                    "startOffset": 17346,
+                    "endLine": 233,
+                    "endColumn": 12,
+                    "endOffset": 17418
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/values-v21/values-v21.xml",
@@ -1598,12 +1640,12 @@
             },
             {
                 "to": {
-                    "startLine": 212,
+                    "startLine": 234,
                     "startColumn": 4,
-                    "startOffset": 15913,
-                    "endLine": 221,
+                    "startOffset": 17423,
+                    "endLine": 243,
                     "endColumn": 12,
-                    "endOffset": 16421
+                    "endOffset": 17931
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-v21/values-v21.xml",
@@ -1619,12 +1661,12 @@
             },
             {
                 "to": {
-                    "startLine": 222,
+                    "startLine": 244,
                     "startColumn": 4,
-                    "startOffset": 16426,
-                    "endLine": 231,
+                    "startOffset": 17936,
+                    "endLine": 253,
                     "endColumn": 12,
-                    "endOffset": 16946
+                    "endOffset": 18456
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-v21/values-v21.xml",
@@ -1640,12 +1682,12 @@
             },
             {
                 "to": {
-                    "startLine": 232,
+                    "startLine": 254,
                     "startColumn": 4,
-                    "startOffset": 16951,
-                    "endLine": 241,
+                    "startOffset": 18461,
+                    "endLine": 263,
                     "endColumn": 12,
-                    "endOffset": 17626
+                    "endOffset": 19136
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-v21/values-v21.xml",
@@ -1661,11 +1703,11 @@
             },
             {
                 "to": {
-                    "startLine": 242,
+                    "startLine": 264,
                     "startColumn": 4,
-                    "startOffset": 17631,
+                    "startOffset": 19141,
                     "endColumn": 56,
-                    "endOffset": 17683
+                    "endOffset": 19193
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-v21/values-v21.xml",
@@ -1680,11 +1722,11 @@
             },
             {
                 "to": {
-                    "startLine": 243,
+                    "startLine": 265,
                     "startColumn": 4,
-                    "startOffset": 17688,
+                    "startOffset": 19198,
                     "endColumn": 57,
-                    "endOffset": 17741
+                    "endOffset": 19251
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-v21/values-v21.xml",

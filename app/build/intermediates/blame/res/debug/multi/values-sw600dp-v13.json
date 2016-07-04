@@ -45,8 +45,27 @@
                     "startLine": 4,
                     "startColumn": 4,
                     "startOffset": 151,
+                    "endColumn": 41,
+                    "endOffset": 188
+                },
+                "from": {
+                    "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.4/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 41,
+                        "endOffset": 92
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 193,
                     "endColumn": 68,
-                    "endOffset": 215
+                    "endOffset": 257
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -61,11 +80,11 @@
             },
             {
                 "to": {
-                    "startLine": 5,
+                    "startLine": 6,
                     "startColumn": 4,
-                    "startOffset": 220,
+                    "startOffset": 262,
                     "endColumn": 69,
-                    "endOffset": 285
+                    "endOffset": 327
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -80,11 +99,11 @@
             },
             {
                 "to": {
-                    "startLine": 6,
+                    "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 290,
+                    "startOffset": 332,
                     "endColumn": 73,
-                    "endOffset": 359
+                    "endOffset": 401
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -99,11 +118,11 @@
             },
             {
                 "to": {
-                    "startLine": 7,
+                    "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 364,
+                    "startOffset": 406,
                     "endColumn": 75,
-                    "endOffset": 435
+                    "endOffset": 477
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -118,11 +137,11 @@
             },
             {
                 "to": {
-                    "startLine": 8,
+                    "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 440,
+                    "startOffset": 482,
                     "endColumn": 58,
-                    "endOffset": 494
+                    "endOffset": 536
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -137,11 +156,11 @@
             },
             {
                 "to": {
-                    "startLine": 9,
+                    "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 499,
+                    "startOffset": 541,
                     "endColumn": 70,
-                    "endOffset": 565
+                    "endOffset": 607
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -156,11 +175,11 @@
             },
             {
                 "to": {
-                    "startLine": 10,
+                    "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 570,
+                    "startOffset": 612,
                     "endColumn": 67,
-                    "endOffset": 633
+                    "endOffset": 675
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -175,11 +194,11 @@
             },
             {
                 "to": {
-                    "startLine": 11,
+                    "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 638,
+                    "startOffset": 680,
                     "endColumn": 59,
-                    "endOffset": 693
+                    "endOffset": 735
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -194,11 +213,11 @@
             },
             {
                 "to": {
-                    "startLine": 12,
+                    "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 698,
+                    "startOffset": 740,
                     "endColumn": 69,
-                    "endOffset": 763
+                    "endOffset": 805
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -213,11 +232,11 @@
             },
             {
                 "to": {
-                    "startLine": 13,
+                    "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 768,
+                    "startOffset": 810,
                     "endColumn": 70,
-                    "endOffset": 834
+                    "endOffset": 876
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -232,11 +251,11 @@
             },
             {
                 "to": {
-                    "startLine": 14,
+                    "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 839,
+                    "startOffset": 881,
                     "endColumn": 71,
-                    "endOffset": 906
+                    "endOffset": 948
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -251,11 +270,11 @@
             },
             {
                 "to": {
-                    "startLine": 15,
+                    "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 911,
+                    "startOffset": 953,
                     "endColumn": 57,
-                    "endOffset": 964
+                    "endOffset": 1006
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -270,11 +289,11 @@
             },
             {
                 "to": {
-                    "startLine": 16,
+                    "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 969,
+                    "startOffset": 1011,
                     "endColumn": 57,
-                    "endOffset": 1022
+                    "endOffset": 1064
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -289,11 +308,11 @@
             },
             {
                 "to": {
-                    "startLine": 17,
+                    "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1027,
+                    "startOffset": 1069,
                     "endColumn": 105,
-                    "endOffset": 1128
+                    "endOffset": 1170
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -308,11 +327,11 @@
             },
             {
                 "to": {
-                    "startLine": 18,
+                    "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1133,
+                    "startOffset": 1175,
                     "endColumn": 63,
-                    "endOffset": 1192
+                    "endOffset": 1234
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -327,11 +346,11 @@
             },
             {
                 "to": {
-                    "startLine": 19,
+                    "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1197,
+                    "startOffset": 1239,
                     "endColumn": 33,
-                    "endOffset": 1226
+                    "endOffset": 1268
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/it.neokree/MaterialTabs/0.11/res/values-sw600dp-v13/values.xml",
@@ -346,11 +365,11 @@
             },
             {
                 "to": {
-                    "startLine": 20,
+                    "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1231,
+                    "startOffset": 1273,
                     "endColumn": 34,
-                    "endOffset": 1261
+                    "endOffset": 1303
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/it.neokree/MaterialTabs/0.11/res/values-sw600dp-v13/values.xml",
@@ -365,11 +384,11 @@
             },
             {
                 "to": {
-                    "startLine": 21,
+                    "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 1266,
+                    "startOffset": 1308,
                     "endColumn": 54,
-                    "endOffset": 1316
+                    "endOffset": 1358
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -384,11 +403,11 @@
             },
             {
                 "to": {
-                    "startLine": 22,
+                    "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 1321,
+                    "startOffset": 1363,
                     "endColumn": 62,
-                    "endOffset": 1379
+                    "endOffset": 1421
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -403,12 +422,12 @@
             },
             {
                 "to": {
-                    "startLine": 23,
+                    "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 1384,
-                    "endLine": 26,
+                    "startOffset": 1426,
+                    "endLine": 27,
                     "endColumn": 12,
-                    "endOffset": 1561
+                    "endOffset": 1603
                 },
                 "from": {
                     "file": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",

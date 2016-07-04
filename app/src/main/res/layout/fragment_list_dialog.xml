@@ -66,10 +66,10 @@
           android:layout_height="60dp"
           android:gravity="center"
           android:textSize="15sp"
-          android:layout_margin="3dp"
 
           fbutton:cornerRadius="1dp"
-          fbutton:shadowEnabled="false" />
+          fbutton:shadowEnabled="false"
+          android:layout_marginTop="10dp" />
       <info.hoang8f.widget.FButton
           android:visibility="gone"
           android:layout_below="@+id/checkOutA"
@@ -99,8 +99,8 @@
           android:layout_height="60dp"
           android:gravity="center"
           android:textSize="15sp"
-          android:layout_margin="3dp"
           fbutton:cornerRadius="1dp"
-          fbutton:shadowEnabled="false" />
+          fbutton:shadowEnabled="false"
+          android:layout_marginTop="10dp" />
   </RelativeLayout>
 </RelativeLayout>

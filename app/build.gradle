@@ -58,7 +58,14 @@ dependencies {
 
 
 
- //  compile 'io.payworks:mpos.android.accessories.verifone-e105:2.8.1@aar'
+    compile 'me.grantland:autofittextview:0.2.+'
+  // compile 'com.afollestad.material-dialogs:commons:0.8.6.1'
+
+    compile('com.github.afollestad.material-dialogs:core:0.8.5.4@aar') {
+        transitive = true
+    }
+
+    //  compile 'io.payworks:mpos.android.accessories.verifone-e105:2.8.1@aar'
    // compile 'io.payworks:mpos.android.comlinks.verifone-e105:2.8.1@aar'
    //compile 'io.payworks:mpos.android.accessories.sewoo:2.8.1@aar'
 
@@ -91,5 +98,7 @@ dependencies {
     compile 'com.wang.avi:library:1.0.5'
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.github.florent37:materialtextfield:1.0.5'
-    //compile project(':mpos-ui')
+   // compile project(':mpos-ui')
+
+    //compile 'com.afollestad.material-dialogs:core:0.8.6.1'
 }

@@ -22,10 +22,12 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.hubtel.mpos.Application.Application;
 import com.hubtel.mpos.Fragments.ListDialogFragment;
 import com.hubtel.mpos.Fragments.POSFRAGMENT;
 import com.hubtel.mpos.Fragments.POSFRAGMENT.POSFRAGMENTOnFragmentInteractionListener;
 import com.hubtel.mpos.Fragments.WalletFragment.OnFragmentInteractionListener;
+import com.hubtel.mpos.Models.CartItems;
 import com.hubtel.mpos.R;
 import com.hubtel.mpos.Utilities.Typefacer;
 import com.hubtel.mpos.Fragments.WalletFragment;
@@ -34,6 +36,7 @@ import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnMenuTabSelectedListener;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.List;
@@ -82,6 +85,8 @@ public class MainActivity extends
     MaterialTabHost tabHost;
     NestedScrollView nestedscroll;
     LayoutInflater inflater;
+
+
 
 
     private final static String MERCHANT_ID="0b74f7bc-ddd3-4150-b4d4-f9fb32f18fe9";
@@ -222,6 +227,7 @@ public class MainActivity extends
         toolbarTitle.setText(title);
         toolbarTitle.setTypeface(typefacer.squareLight());
         TextView toolbarnotify=(TextView)findViewById(R.id.toolbarnotify);
+        toolbarnotify.setTypeface(typefacer.squareBold());
         toolbarnotify.setVisibility(View.GONE);
 
 
@@ -248,6 +254,63 @@ public class MainActivity extends
 
     @Override
     public void onClick(View v) {
+
+    }
+
+
+    @Override
+    public void addItemsToCart(CartItems cartItems) {
+
+        try{
+
+            if(Application.cartItemsList!=null && Application.cartItemsList.size()!=0){
+                Application.cartItemsList.add(cartItems);}
+            else{
+                Application.cartItemsList=new ArrayList<>();
+            Application.cartItemsList.add(cartItems);
+
+
+
+
+
+            }
+
+
+            TextView toolbarnotify=(TextView)findViewById(R.id.toolbarnotify);
+            toolbarnotify.setVisibility(View.VISIBLE);
+            toolbarnotify.setTypeface(typefacer.squareLight());
+            toolbarnotify.setText("( "+Application.cartItemsList.size()+" ) "+getTotalSalesFromList());
+
+        }catch (Exception e){
+
+
+
+            e.printStackTrace();
+        }
+
+
+    }
+
+
+    double getTotalSalesFromList(){
+
+
+        double sale=0.0;
+
+        for (CartItems cartItems:Application.cartItemsList){
+
+
+           // sale+=Double.parseDouble(cartItems.getItemPrice());
+            double subTotal = (Double.parseDouble(cartItems.getItemPrice()) * Integer.parseInt(cartItems.getItemQty()));
+            sale += subTotal;
+
+        }
+
+
+
+
+
+        return sale;
 
     }
 
@@ -319,7 +382,7 @@ public class MainActivity extends
         try{
 
 
-       /**     initMockPaymentController();
+           initMockPaymentController();
 
 
             //
@@ -337,8 +400,8 @@ public class MainActivity extends
 
             String trim=uri.replace("Ghs","");
             String ur=Utility.prepareString4double(trim);
-            startPayment(Double.valueOf(ur), true, null);**/
-            hitTransaction();
+            startPayment(Double.valueOf(ur), true, null);
+           // hitTransaction();
 
         }catch (Exception e){
 

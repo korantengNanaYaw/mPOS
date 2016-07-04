@@ -8,14 +8,14 @@ package at.markushi.ui;
 
 public final class R {
 	public static final class attr {
-		public static final int av_action = 0x7f010020;
-		public static final int av_color = 0x7f01001f;
+		public static final int av_action = 0x7f01003c;
+		public static final int av_color = 0x7f01003b;
 	}
 	public static final class id {
-		public static final int back = 0x7f0c0034;
-		public static final int close = 0x7f0c0035;
-		public static final int drawer = 0x7f0c0036;
-		public static final int plus = 0x7f0c0037;
+		public static final int back = 0x7f0c0037;
+		public static final int close = 0x7f0c0038;
+		public static final int drawer = 0x7f0c0039;
+		public static final int plus = 0x7f0c003a;
 	}
 	public static final class integer {
 		public static final int av_animationDuration = 0x7f0b0004;
@@ -23,7 +23,7 @@ public final class R {
 		public static final int rcv_animationDurationReveal = 0x7f0b0008;
 	}
 	public static final class styleable {
-		public static final int[] ActionView = { 0x7f01001f, 0x7f010020 };
+		public static final int[] ActionView = { 0x7f01003b, 0x7f01003c };
 		public static final int ActionView_av_action = 1;
 		public static final int ActionView_av_color = 0;
 	}

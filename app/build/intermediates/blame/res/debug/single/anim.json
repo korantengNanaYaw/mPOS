@@ -16,6 +16,10 @@
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/popup_enter.xml",
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.4/res/anim/popup_enter.xml"
+    },
+    {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/design_bottom_sheet_slide_out.xml",
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/res/anim/design_bottom_sheet_slide_out.xml"
     },
@@ -26,6 +30,10 @@
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/decelerate_cubic.xml",
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.4/res/anim/decelerate_cubic.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/mpu_fade_out.xml",
@@ -50,6 +58,10 @@
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/mpu_rotation.xml",
         "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/anim/mpu_rotation.xml"
+    },
+    {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/popup_exit.xml",
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.4/res/anim/popup_exit.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",

@@ -1,1 +1,1 @@
-include ':app', ':mpos-ui'
+include ':app'

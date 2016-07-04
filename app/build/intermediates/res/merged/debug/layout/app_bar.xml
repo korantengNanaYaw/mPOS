@@ -21,7 +21,6 @@
             android:background="?attr/selectableItemBackground"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:text="MPOS"
             android:drawablePadding="2dp"
             android:textSize="18dp"
@@ -35,17 +34,18 @@
             android:id="@+id/toolbarnotify"
             style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
             android:background="?attr/selectableItemBackground"
-             android:textColor="#fff20300"
+            android:textColor="#ffffff"
 
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
-            android:gravity="end"
-            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textSize="14dp"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="8dp" />
+            android:layout_marginRight="8dp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
