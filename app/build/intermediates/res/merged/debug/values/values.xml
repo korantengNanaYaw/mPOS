@@ -153,6 +153,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorPrimaryDarkO">#303F9F</color>
     <color name="colorWhiteSmoke">#F5F5F5</color>
+    <color name="colorWhiteSmokeDark">#c9c9c9</color>
     <color name="design_fab_shadow_end_color">@android:color/transparent</color>
     <color name="design_fab_shadow_mid_color">#14000000</color>
     <color name="design_fab_shadow_start_color">#44000000</color>

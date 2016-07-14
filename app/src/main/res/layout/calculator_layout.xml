@@ -231,14 +231,20 @@
 
 
 
-        <Button
-            style="@style/keypadButton"
-            android:id="@+id/checkOut"
+        <info.hoang8f.widget.FButton
+
+            android:textColor="#194e9a"
+            fbutton:buttonColor="@color/colorWhiteSmoke"
+            fbutton:cornerRadius="2dp"
+            fbutton:shadowEnabled="false"
+            android:id="@+id/checkOutB"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_gravity="center"
             android:layout_weight=".25"
             android:text="CheckOut"
             android:textSize="16sp"
+            android:background="@color/colorWhiteSmokeDark"
             android:layout_margin="3dp" />
 
         <Button
@@ -248,12 +254,12 @@
             android:layout_height="match_parent"
             android:layout_weight=".25"
             android:text="Others"
-            android:visibility="visible"
+            android:visibility="gone"
             android:textSize="15sp"
             android:layout_margin="3dp" />
         <Button
             android:layout_weight=".25"
-
+            android:visibility="gone"
             style="@style/keypadButton"
             android:id="@+id/buttonCart"
             android:layout_width="0dp"

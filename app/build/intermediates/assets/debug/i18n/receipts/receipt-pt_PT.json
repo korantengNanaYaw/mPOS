@@ -54,7 +54,8 @@
         }, 
         "TransactionType": {
             "CHARGE": "Pagamento", 
-            "REFUND": "Reversão"
+            "REFUND": "Reversão", 
+            "CHARGE_UNCAPTURED": "Pre-Authorization"
         }, 
         "PaymentDetailsCustomerVerification": {
             "NONE": "Nenhuma", 

@@ -7,7 +7,7 @@
     android:padding="10dp"
     android:layout_margin="3dp"
     android:clickable="true"
-    app:cardBackgroundColor="@android:color/white"
+    app:cardBackgroundColor="@color/colorWhiteSmoke"
     android:foreground="?android:selectableItemBackground"
     android:layout_height="80dp">
 

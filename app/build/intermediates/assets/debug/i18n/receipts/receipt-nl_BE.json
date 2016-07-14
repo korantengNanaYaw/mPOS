@@ -54,7 +54,8 @@
         }, 
         "TransactionType": {
             "CHARGE": "Betaling", 
-            "REFUND": "Annulatie"
+            "REFUND": "Annulatie", 
+            "CHARGE_UNCAPTURED": "Pre-Authorization"
         }, 
         "PaymentDetailsCustomerVerification": {
             "NONE": "Geen", 

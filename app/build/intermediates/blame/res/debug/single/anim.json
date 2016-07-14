@@ -1,7 +1,7 @@
 [
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/mpu_fade_in.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/anim/mpu_fade_in.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/anim/mpu_fade_in.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/design_snackbar_in.xml",
@@ -37,7 +37,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/mpu_fade_out.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/anim/mpu_fade_out.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/anim/mpu_fade_out.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
@@ -57,7 +57,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/mpu_rotation.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/anim/mpu_rotation.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/anim/mpu_rotation.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/anim/popup_exit.xml",

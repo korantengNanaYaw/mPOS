@@ -50,36 +50,23 @@ dependencies {
     compile 'com.android.support:design:23.4.0'
 
 
+    compile 'io.payworks:mpos.android.ui:2.9.0:@aar'
+    compile 'io.payworks:mpos.android.core:2.9.0:@aar'
 
-    compile 'io.payworks:mpos.android.ui:2.8.1@aar'
-    compile 'io.payworks:mpos.android.core:2.8.1@aar'
-    compile 'io.payworks:mpos.android.accessories.miura:2.8.1@aar'
-    compile 'io.payworks:mpos.android.comlinks.bluetooth:2.8.1@aar'
+    // Add those three dependencies if you want to use a Miura card reader
+    compile 'io.payworks:mpos.android.accessories.miura:2.9.0:@aar'
+    compile 'io.payworks:mpos.android.comlinks.bluetooth:2.9.0:@aar'
+    compile 'io.payworks:mpos.android.comlinks.tcp:2.9.0:@aar'
 
 
 
     compile 'me.grantland:autofittextview:0.2.+'
-  // compile 'com.afollestad.material-dialogs:commons:0.8.6.1'
+
 
     compile('com.github.afollestad.material-dialogs:core:0.8.5.4@aar') {
         transitive = true
     }
 
-    //  compile 'io.payworks:mpos.android.accessories.verifone-e105:2.8.1@aar'
-   // compile 'io.payworks:mpos.android.comlinks.verifone-e105:2.8.1@aar'
-   //compile 'io.payworks:mpos.android.accessories.sewoo:2.8.1@aar'
-
-
-
-
-    //compile 'io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA:@aar'
-
-
-
-
-   // compile 'io.payworks:mpos.android.ui:2.8.1-BBPOS-BETA@aar'
-    //compile 'io.payworks:mpos.android.core:2.8.1-BBPOS-BETA@aar'
-    //compile 'io.payworks:mpos.android.accessories.bbpos:2.8.1-BBPOS-BETA@aar'
 
 
     compile 'com.verifone:verifone-pwmadk:3.0.2@aar'

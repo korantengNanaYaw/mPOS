@@ -54,7 +54,8 @@
         }, 
         "TransactionType": {
             "CHARGE": "Płatność", 
-            "REFUND": "Płatność zwrotna"
+            "REFUND": "Płatność zwrotna", 
+            "CHARGE_UNCAPTURED": "Pre-Authorization"
         }, 
         "PaymentDetailsCustomerVerification": {
             "NONE": "Brak", 

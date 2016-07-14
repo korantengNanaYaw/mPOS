@@ -1,7 +1,7 @@
 [
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_activity_print_receipt.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_activity_print_receipt.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_activity_print_receipt.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
@@ -13,7 +13,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_fragment_print_receipt.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_fragment_print_receipt.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_fragment_print_receipt.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/activity_mobile_money.xml",
@@ -53,7 +53,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_fragment_summary.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_fragment_summary.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_fragment_summary.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/md_dialog_custom.xml",
@@ -73,7 +73,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_listitem_transaction_history.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_listitem_transaction_history.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_listitem_transaction_history.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
@@ -117,7 +117,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_preference_category.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_preference_category.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_preference_category.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/md_dialog_progress_indeterminate_horizontal.xml",
@@ -129,7 +129,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_activity_transaction_summary.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_activity_transaction_summary.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_activity_transaction_summary.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/wallet_card_layout.xml",
@@ -153,7 +153,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_send_action_view.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_send_action_view.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_send_action_view.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
@@ -169,7 +169,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_fragment_load_transaction_summary.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_fragment_load_transaction_summary.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_fragment_load_transaction_summary.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
@@ -181,7 +181,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_fragment_signature.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_fragment_signature.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_fragment_signature.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
@@ -217,7 +217,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_fragment_transaction.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_fragment_transaction.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_fragment_transaction.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
@@ -237,7 +237,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_fragment_send_receipt.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_fragment_send_receipt.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_fragment_send_receipt.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
@@ -273,7 +273,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_fragment_login.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_fragment_login.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_fragment_login.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/spinner_rows.xml",
@@ -293,7 +293,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_fragment_error.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_fragment_error.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_fragment_error.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
@@ -305,7 +305,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_activity_login.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_activity_login.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_activity_login.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
@@ -333,7 +333,11 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_activity_settings.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_activity_settings.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_activity_settings.xml"
+    },
+    {
+        "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/activity_card_check_out.xml",
+        "source": "/Users/apple/Downloads/MPOS/app/src/main/res/layout/activity_card_check_out.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
@@ -341,7 +345,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_activity_payment.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_activity_payment.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_activity_payment.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/md_stub_actionbuttons.xml",
@@ -389,7 +393,7 @@
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/mpu_fragment_application_selection.xml",
-        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.8.1/res/layout/mpu_fragment_application_selection.xml"
+        "source": "/Users/apple/Downloads/MPOS/app/build/intermediates/exploded-aar/io.payworks/mpos.android.ui/2.9.0/res/layout/mpu_fragment_application_selection.xml"
     },
     {
         "merged": "/Users/apple/Downloads/MPOS/app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",

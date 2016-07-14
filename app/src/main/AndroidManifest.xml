@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hubtel.mpos">
+
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:name=".Application.Application"
         android:allowBackup="true"
@@ -20,11 +22,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".Activities.Payment" />
-        <activity android:name=".Activities.MobileMoney"
+        <activity
+            android:name=".Activities.MobileMoney"
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Activities.MainActivity" />
+        </activity>
+        <activity android:name=".Activities.CardCheckOut">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activities.CardCheckOut" />
+
         </activity>
     </application>
 

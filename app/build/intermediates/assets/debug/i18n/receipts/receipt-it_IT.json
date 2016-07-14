@@ -54,7 +54,8 @@
         }, 
         "TransactionType": {
             "CHARGE": "Pagamento", 
-            "REFUND": "Storno"
+            "REFUND": "Storno", 
+            "CHARGE_UNCAPTURED": "Pre-Authorization"
         }, 
         "PaymentDetailsCustomerVerification": {
             "NONE": "Nessuna", 

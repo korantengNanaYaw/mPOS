@@ -54,7 +54,8 @@
         }, 
         "TransactionType": {
             "CHARGE": "Maksu", 
-            "REFUND": "Palautus"
+            "REFUND": "Palautus", 
+            "CHARGE_UNCAPTURED": "Pre-Authorization"
         }, 
         "PaymentDetailsCustomerVerification": {
             "NONE": "Ei mikään", 

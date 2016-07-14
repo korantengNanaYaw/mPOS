@@ -35,6 +35,19 @@
     <string name="but_all_discount">Discounts</string>
     <string name="search_all_items">Search All Items</string>
 
+
+    <string name="mpu_fa_bank" translatable="false"></string>
+    <string name="mpu_fa_close" translatable="false"></string>
+    <string name="mpu_fa_compress" translatable="false"></string>
+    <string name="mpu_fa_credit_card" translatable="false"></string>
+    <string name="mpu_fa_email" translatable="false"></string>
+    <string name="mpu_fa_history" translatable="false"></string>
+    <string name="mpu_fa_info" translatable="false"></string>
+    <string name="mpu_fa_lock" translatable="false"></string>
+    <string name="mpu_fa_print" translatable="false"></string>
+    <string name="mpu_fa_search" translatable="false"></string>
+    <string name="mpu_fa_th" translatable="false"></string>
+    <string name="mpu_fa_times_circle" translatable="false"></string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

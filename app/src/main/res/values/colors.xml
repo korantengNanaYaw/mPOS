@@ -5,4 +5,5 @@
     <color name="colorPrimaryDarkO">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorWhiteSmoke">#F5F5F5</color>
+    <color name="colorWhiteSmokeDark">#c9c9c9</color>
 </resources>

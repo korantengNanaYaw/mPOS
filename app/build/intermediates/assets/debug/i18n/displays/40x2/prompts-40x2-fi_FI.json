@@ -210,7 +210,8 @@
             "Add TIP?"
         ], 
         "ProviderComponentTippingAskingForTip": [
-            "Asking for TIP..."
+            "Asking for TIP...", 
+            ""
         ]
     }
 }

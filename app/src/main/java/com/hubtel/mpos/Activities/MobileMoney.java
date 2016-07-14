@@ -33,7 +33,7 @@ public class MobileMoney extends AppCompatActivity {
     TextView providerLabel;
     Spinner spinner;
     Button continueButton;
-  EditText input_phone_number,input_amount;
+    EditText input_phone_number,input_amount;
     TextInputLayout input_phone_number_layout,input_amount_edt;
 
 
@@ -155,43 +155,7 @@ public class MobileMoney extends AppCompatActivity {
             return row;
         }
 
-        private void setLabels() {
-            providerLabel=(TextView)findViewById(R.id.providerLabel);
-            providerLabel.setTypeface(typefacer.squareRegular());
 
-
-
-            input_phone_number_layout=(TextInputLayout) findViewById(R.id.input_phone_number_layout);
-            input_phone_number_layout.setTypeface(typefacer.squareLight());
-
-
-            input_amount_edt=(TextInputLayout) findViewById(R.id.input_amount_edt);
-            input_amount_edt.setTypeface(typefacer.squareLight());
-
-
-            continueButton=(Button)findViewById(R.id.continueButton);
-            continueButton.setTypeface(typefacer.squareLight());
-        }
-
-
-        private void setToolBar(String title){
-            toolbar=(Toolbar)findViewById(R.id.app_bar);
-            toolbarTitle= (TextView) findViewById(R.id.toolbarTitle);
-            toolbarnotify=(TextView)findViewById(R.id.toolbarnotify);
-
-            toolbarTitle.setText(title);
-            toolbarTitle.setTypeface(typefacer.squareLight());
-
-            toolbarnotify.setVisibility(View.GONE);
-
-            setSupportActionBar(toolbar);
-            getSupportActionBar().setTitle("");
-            getSupportActionBar().setDisplayShowHomeEnabled(true);
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        getActionBar().setDisplayHomeAsUpEnabled(true);
-
-
-        }
     }
 
 

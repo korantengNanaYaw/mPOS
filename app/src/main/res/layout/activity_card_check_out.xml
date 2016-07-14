@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    tools:context="com.hubtel.mpos.Activities.CardCheckOut">
+    <include  android:id="@+id/app_bar"
+        layout="@layout/app_bar">
+
+    </include>
+
+
+
+        <RelativeLayout
+            android:layout_below="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/CardModeLayout"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Statuo 0"
+                android:textColor="@android:color/holo_red_dark"
+                android:id="@+id/statusText"
+                android:gravity="center_horizontal"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <info.hoang8f.widget.FButton
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abort"
+                android:id="@+id/CardAbortButton"
+                fbutton:cornerRadius="1dp"
+                fbutton:shadowEnabled="false"
+
+                android:textColor="@android:color/white"
+                fbutton:buttonColor="@color/colorPrimaryDark"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="loading.."
+                android:id="@+id/txtIcon"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+            <info.hoang8f.widget.FButton
+                android:textColor="@android:color/white"
+                fbutton:buttonColor="@android:color/holo_red_dark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fbutton:cornerRadius="1dp"
+                fbutton:shadowEnabled="false"
+                android:text="Cancel"
+                android:id="@+id/cardCancelButton"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+

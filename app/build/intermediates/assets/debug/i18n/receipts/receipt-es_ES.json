@@ -54,7 +54,8 @@
         }, 
         "TransactionType": {
             "CHARGE": "Pago", 
-            "REFUND": "Cancelación"
+            "REFUND": "Cancelación", 
+            "CHARGE_UNCAPTURED": "Pre-Authorization"
         }, 
         "PaymentDetailsCustomerVerification": {
             "NONE": "Ninguno", 

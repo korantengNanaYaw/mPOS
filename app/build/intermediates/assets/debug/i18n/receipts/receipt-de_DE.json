@@ -54,7 +54,8 @@
         }, 
         "TransactionType": {
             "CHARGE": "Bezahlung", 
-            "REFUND": "Stornierung"
+            "REFUND": "Stornierung", 
+            "CHARGE_UNCAPTURED": "Reservierung"
         }, 
         "PaymentDetailsCustomerVerification": {
             "NONE": "Keine", 

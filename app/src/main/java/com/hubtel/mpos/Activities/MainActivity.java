@@ -28,6 +28,7 @@ import com.hubtel.mpos.Fragments.POSFRAGMENT;
 import com.hubtel.mpos.Fragments.POSFRAGMENT.POSFRAGMENTOnFragmentInteractionListener;
 import com.hubtel.mpos.Fragments.WalletFragment.OnFragmentInteractionListener;
 import com.hubtel.mpos.Models.CartItems;
+import com.hubtel.mpos.Models.Sale;
 import com.hubtel.mpos.R;
 import com.hubtel.mpos.Utilities.Typefacer;
 import com.hubtel.mpos.Fragments.WalletFragment;
@@ -117,6 +118,8 @@ public class MainActivity extends
        // AccessoryParameters mockAccessoryParameters = new AccessoryParameters.Builder(AccessoryFamily.BBPOS_WISE).bluetooth().build();
 
         AccessoryParameters mockAccessoryParameters = new AccessoryParameters.Builder(AccessoryFamily.MIURA_MPI).bluetooth().build();
+
+
 
 
        /** AccessoryParameters parameters = new AccessoryParameters.Builder(AccessoryFamily.BBPOS_WISEPAD)
@@ -340,6 +343,13 @@ public class MainActivity extends
 
     }
 
+
+    @Override
+    public void POSFRAGMENTonFragmentInteraction(String mode, Sale sale) {
+        ListDialogFragment listDialog=new ListDialogFragment().newInstance(sale);
+        showDialog(listDialog,"checkout");
+    }
+
     private void addItemsToCart(String uri) {
 
         try{
@@ -376,13 +386,13 @@ public class MainActivity extends
     }
 
     @Override
-    public void ListDialogFragmentonFragmentInteraction(String uri) {
+    public void ListDialogFragmentonFragmentInteraction(Sale uri) {
 
 
         try{
 
-
-           initMockPaymentController();
+/**
+        initMockPaymentController();
 
 
             //
@@ -393,15 +403,17 @@ public class MainActivity extends
                     .setTextColorPrimary(Color.WHITE);
 
 
-            //MIURA When i want to receive a TIP
-            TransactionProcessParameters processParameters = new TransactionProcessParameters.Builder()
-                    .addAskForTipStep()
-                    .build();
 
-            String trim=uri.replace("Ghs","");
-            String ur=Utility.prepareString4double(trim);
-            startPayment(Double.valueOf(ur), true, null);
-           // hitTransaction();
+
+
+            startPayment(uri, null);
+**/
+
+             Intent intent=new Intent(MainActivity.this,CardCheckOut.class);
+            intent.putExtra("sale",uri);
+            startActivity(intent);
+
+
 
         }catch (Exception e){
 
@@ -498,16 +510,16 @@ public class MainActivity extends
 
 
 
-    void startPayment(double amount, boolean autoCapture, TransactionProcessParameters processParameters) {
+    void startPayment(Sale sale, TransactionProcessParameters processParameters) {
 
 
         try{
 
             TransactionParameters params = new TransactionParameters.Builder()
-                    .charge(BigDecimal.valueOf(amount),Currency.USD)
-                    .subject("How much wood would a woodchuck chuck if a woodchuck could chuck wood?")
-                    .customIdentifier("customId")
-                    .autoCapture(autoCapture)
+                    .charge(BigDecimal.valueOf(Double.parseDouble(sale.getAmount())),Currency.GHS)
+                    .subject(sale.getSubject())
+                    .customIdentifier(sale.getCustomerIdentify())
+                   // .autoCapture(autoCapture)
                     .build();
             Intent intent = MposUi.getInitializedInstance().createTransactionIntent(params, processParameters);
             startActivityForResult(intent, MposUi.RESULT_CODE_APPROVED);
